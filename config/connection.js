@@ -1,3 +1,5 @@
+// This file is designed to set up sequelize so that we connect or MySql2 database to the server.
+
 const Sequelize = require("sequelize");
 require("dotenv").config();
 
