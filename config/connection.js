@@ -5,9 +5,9 @@ require("dotenv").config();
 
 const sequelize = new Sequelize(
   //use credentials from the.env file in the root directory
-  process.env.dbName,
-  process.env.dbUser,
-  process.env.dbPassword,
+  process.env.DB_NAME,
+  process.env.DB_USER,
+  process.env.DB_PASSWORD,
   //required information for running sequelize from their documentation
   {
     host: "localhost",
