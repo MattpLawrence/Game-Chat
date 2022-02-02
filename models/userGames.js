@@ -25,7 +25,7 @@ UserGames.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    // DataTypes.ARRAY(DataTypes.STRING) not availible for MySQL, need to save as STRING then split / join in JS
+    // DataTypes.ARRAY(DataTypes.STRING) not available for MySQL, need to save as STRING then split / join in JS
     nameGame: {
       type: DataTypes.STRING,
       allowNull: false,
