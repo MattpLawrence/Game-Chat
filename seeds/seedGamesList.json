@@ -1,17 +1,22 @@
 [
   {
-    "namePlatform": "PlayStation 5",
-    "nameGame": ""
+    "namePlatform": "PlayStation",
+    "nameGame": "Red Dead Redemption 2"
 
   },
   {
-    "namePlatform": "Xbox Series X",
-    "nameGame": ""
+    "namePlatform": "Xbox",
+    "nameGame": "Red Dead Redemption 2"
 
   },
   {
     "namePlatform": "PC / Mac",
-    "nameGame": ""
+    "nameGame": "Red Dead Redemption 2"
+
+  },
+  {
+    "namePlatform": "Xbox",
+    "nameGame": "Halo Infinite"
 
   },
   {
@@ -21,7 +26,32 @@
   },
   {
     "namePlatform": "Mobile Games",
-    "nameGame": ""
+    "nameGame": "Forza Horizon 5"
+
+  }
+  {
+    "namePlatform": "Xbox",
+    "nameGame": "Forza Horizon 5"
+
+  }
+  {
+    "namePlatform": "PC / Mac",
+    "nameGame": "Forza Horizon 5"
+
+  }
+  {
+    "namePlatform": "Mobile Games",
+    "nameGame": "Minecraft"
+
+  }
+  {
+    "namePlatform": "PlayStation",
+    "nameGame": "Minecraft"
+
+  }
+  {
+    "namePlatform": "PC / Mac",
+    "nameGame": "Minecraft"
 
   }
 ]
