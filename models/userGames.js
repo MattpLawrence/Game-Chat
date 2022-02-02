@@ -26,7 +26,7 @@ UserGames.init(
       allowNull: false,
     },
     nameGame: {
-      type: DataTypes.ARRAY,
+      type: DataTypes.ARRAY(DataTypes.STRING),
       allowNull: false,
     },
   },

@@ -14,7 +14,7 @@ ListGames.init(
       autoIncrement: true,
     },
     namePlatform: {
-      type: DataTypes.ARRAY,
+      type: DataTypes.ARRAY(DataTypes.STRING),
       allowNull: false,
     },
     nameGame: {
