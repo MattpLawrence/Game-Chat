@@ -20,38 +20,48 @@
 
   },
   {
-    "namePlatform": "Nintendo Switch",
-    "nameGame": ""
-
-  },
-  {
     "namePlatform": "Mobile Games",
     "nameGame": "Forza Horizon 5"
 
-  }
+  },
   {
     "namePlatform": "Xbox",
     "nameGame": "Forza Horizon 5"
 
-  }
+  },
   {
     "namePlatform": "PC / Mac",
     "nameGame": "Forza Horizon 5"
 
-  }
+  },
   {
     "namePlatform": "Mobile Games",
     "nameGame": "Minecraft"
 
-  }
+  },
   {
     "namePlatform": "PlayStation",
     "nameGame": "Minecraft"
 
-  }
+  },
   {
     "namePlatform": "PC / Mac",
     "nameGame": "Minecraft"
+
+  },
+  {
+    "namePlatform": "Nintendo Switch",
+    "nameGame": "The Legend of Zelda: Breath of the Wild"
+
+  },
+  {
+    "namePlatform": "Nintendo Switch",
+    "nameGame": "Animal Crossing: New Horizons"
+
+  },
+  {
+    "namePlatform": "Nintendo Switch",
+    "nameGame": "Metroid Dread"
 
   }
 ]
