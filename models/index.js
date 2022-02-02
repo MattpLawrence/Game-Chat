@@ -2,7 +2,7 @@
 
 const UserProfile = require("./userProfile");
 const UserGames = require("./userGames");
-const ListGames = require("./listGames");
+const GamesList = require("./gamesList");
 
 //set up relationships
 UserProfile.hasMany(UserGames, {
@@ -14,4 +14,4 @@ UserGames.belongsTo(UserProfile, {
   foreignKey: "idUser",
 });
 
-module.exports = { UserProfile, UserGames, ListGames };
+module.exports = { UserProfile, UserGames, GamesList };

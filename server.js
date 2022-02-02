@@ -16,6 +16,6 @@ app.use(express.static(path.join(__dirname, "public")));
 //make sure sequelize is connected before starting the server.
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => {
-    console.log(`Server listening on port: ${PORT}`);
+    console.log(` \nServer listening on port: ${PORT}`);
   });
 });

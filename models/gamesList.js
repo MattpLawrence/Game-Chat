@@ -3,9 +3,9 @@ const { Model, DataTypes, ARRAY } = require("sequelize");
 //connect to the sequelize server created in config/connection
 const sequelize = require("../config/connection");
 
-class ListGames extends Model {}
+class GamesList extends Model {}
 
-ListGames.init(
+GamesList.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -14,7 +14,7 @@ ListGames.init(
       autoIncrement: true,
     },
     namePlatform: {
-      // DataTypes.ARRAY(DataTypes.STRING) not availible for MySQL, need to save as STRING then split / join in JS
+      // DataTypes.ARRAY(DataTypes.STRING) not available for MySQL, need to save as STRING then split / join in JS
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -27,8 +27,8 @@ ListGames.init(
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: "tblListGames",
+    modelName: "tblGamesList",
   }
 );
 
-module.exports = ListGames;
+module.exports = GamesList;
