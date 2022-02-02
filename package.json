@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/MattpLawrence/Game-Chat#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "dotenv": "^15.0.1",
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.2"
   }
 }
