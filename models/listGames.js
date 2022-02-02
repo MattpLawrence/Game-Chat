@@ -1,5 +1,5 @@
 //require Model and DataTypes from Sequelize package
-const { Model, DataTypes } = require("sequelize");
+const { Model, DataTypes, ARRAY } = require("sequelize");
 //connect to the sequelize server created in config/connection
 const sequelize = require("../config/connection");
 
@@ -14,7 +14,8 @@ ListGames.init(
       autoIncrement: true,
     },
     namePlatform: {
-      type: DataTypes.ARRAY(DataTypes.STRING),
+      // DataTypes.ARRAY(DataTypes.STRING) not availible for MySQL, need to save as STRING then split / join in JS
+      type: DataTypes.STRING,
       allowNull: false,
     },
     nameGame: {

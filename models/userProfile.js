@@ -33,12 +33,12 @@ UserProfile.init(
       unique: true,
     },
     timeStart: {
-      type: DataTypes.TIME,
+      type: DataTypes.STRING,
       allowNull: false,
       unique: true,
     },
     timeEnd: {
-      type: DataTypes.TIME,
+      type: DataTypes.STRING,
       allowNull: false,
       unique: true,
     },
