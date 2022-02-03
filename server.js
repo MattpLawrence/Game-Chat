@@ -7,10 +7,10 @@ const routes = require("./controllers");
 
 const app = express();
 
-const PORT = process.envPORT || 3001;
+const PORT = process.env.PORT || 3001;
 
-app.use(express.json);
-app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 // set root of static assets tot he 'public' folder
 app.use(express.static(path.join(__dirname, "public")));
 
