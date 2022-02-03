@@ -1,4 +1,5 @@
 const router = require("express").Router();
+const res = require("express/lib/response");
 const { UserProfile } = require("../../models");
 
 var initProfile = "";
@@ -11,4 +12,22 @@ router.post("/signupProfile", async (req, res) => {
   }
 });
 
+//take bisthday info and add to initProfile
+router.post("/signupBirthday", async (req, res) => {
+  try {
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
+
+//take timeStart, and timeEnd from body and add to initProfile then create new UserProfile
+router.post("/signupHours", async (req, res) => {
+  try {
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
+
 // reference api routes on loginPage.js to log in after creating account
+
+module.exports = router;
