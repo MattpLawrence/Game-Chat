@@ -1,7 +1,23 @@
 const router = require("express").Router();
 const Pusher = require("pusher");
+const path = require("path");
+const bodyParser = require("body-parser");
+const session = require("express-session");
 
 // *******************Pusher**********************
+
+// Session middleware
+router.use(
+  session({
+    secret: "somesuperdupersecret",
+    resave: true,
+    saveUninitialized: true,
+  })
+);
+// Body parser middleware
+router.use(bodyParser.json());
+router.use(bodyParser.urlencoded({ extended: false }));
+
 // Create an instance of Pusher
 const pusher = new Pusher({
   appId: process.env.PUSHER_APP_ID,
@@ -11,8 +27,17 @@ const pusher = new Pusher({
   encrypted: true,
 });
 
-router.get("/", (req, res) => {
-  res.sendFile("index.html");
+// router.get("/", (req, res) => {
+//   res.sendFile("index.html");
+// });
+// chat home route
+router.get("/chat", async (req, res) => {
+  try {
+    res.render("chat");
+  } catch (err) {
+    console.log("nope");
+    res.status(500).json(err);
+  }
 });
 
 router.post("/join-chat", (req, res) => {
