@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Matthew Lawrence">
   <!-- Favicon -->
-  <link rel="icon" type="image/ico" href="./assets/images/favicon.ico">
+  <link rel="icon" type="image/ico" href="../../public/images/favicon.ico">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,29 +20,22 @@
 
 
   <header>
-    
-    <h1 id="title">Weather Dashboard</h1>
-    <div id="mySidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="input-group">
-          <input type="search" class="form-control rounded" id="sideSearchBar" placeholder="City" aria-label="Search"
-          aria-describedby="search-addon" />
-          <div id="buttonSpinner">
-            <button type="button" class="btn btn-primary" id="sideSearchBtn">Search</button>
-            <div class="spinner-border" role="status" id="spinner">
-              <span class="sr-only">Loading...</span>
-            </div>
-          </div>
-          <ul id="sideNotFound"></ul>
-          <h2 class="centerLabel">Previous Cities:</h2>
-          <ul id="sideSearchBarList"></ul>
-        </div>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">WebSiteName</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
     </div>
-    
-    <div id="main">
-      <button class="openbtn" id="openBtn" onclick="openNav()">&#9776; </button>
-    </div>
-    
+  </nav>
   </header>
 
   <div class="container">
