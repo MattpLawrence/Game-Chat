@@ -6,12 +6,12 @@ const GamesList = require("./gamesList");
 
 //set up relationships
 UserProfile.hasMany(UserGames, {
-  foreignKey: "idUser",
+  foreignKey: "id_user",
   onDelete: "CASCADE",
 });
 //include what UserGames belongs to
 UserGames.belongsTo(UserProfile, {
-  foreignKey: "idUser",
+  foreignKey: "id_user",
 });
 
 module.exports = { UserProfile, UserGames, GamesList };
