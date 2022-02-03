@@ -2,4 +2,34 @@
   --green: #1a8484;
   --lightGreen: #54dddd;
   --darkGreen: #075050;
+  --brightGreen: #28a745;
+}
+
+#logo {
+  color: var(--brightGreen);
+}
+
+/* *******************Mobile/vs desktop */
+.desktop img {
+  display: none;
+}
+.mobile img {
+  display: block;
+}
+/* *******************Landing page */
+.mainImg img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  z-index: -1;
+}
+
+@media all and (min-width: 960px) {
+  .desktop img {
+    display: block;
+  }
+  .mobile img {
+    display: none;
+  }
 }
