@@ -12,7 +12,7 @@ router.post("/signupProfile", async (req, res) => {
   }
 });
 
-//take bisthday info and add to initProfile
+//take birthday info and add to initProfile
 router.post("/signupBirthday", async (req, res) => {
   try {
   } catch (err) {
