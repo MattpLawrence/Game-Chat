@@ -36,45 +36,47 @@ app.use(express.urlencoded({ extended: false }));
 // set root of static assets tot he 'public' folder
 app.use(express.static(path.join(__dirname, "public")));
 
-// app.use(routes);
+app.use(routes);
 
-// ***********************pusher**************************
-// Create an instance of Pusher
-const pusher = new Pusher({
-  appId: process.env.PUSHER_APP_ID,
-  key: process.env.PUSHER_APP_KEY,
-  secret: process.env.PUSHER_APP_SECRET,
-  cluster: process.env.PUSHER_APP_CLUSTER,
-  encrypted: true,
-});
-app.get("/", (req, res) => {
-  res.sendFile("index.html");
-});
+//comment back in to use html working version
 
-app.post("/join-chat", (req, res) => {
-  // store username in session
-  req.session.username = req.body.username;
-  res.json("Joined");
-});
+// // ***********************pusher**************************
+// // Create an instance of Pusher
+// const pusher = new Pusher({
+//   appId: process.env.PUSHER_APP_ID,
+//   key: process.env.PUSHER_APP_KEY,
+//   secret: process.env.PUSHER_APP_SECRET,
+//   cluster: process.env.PUSHER_APP_CLUSTER,
+//   encrypted: true,
+// });
+// // app.get("/", (req, res) => {
+// //   res.sendFile("index.html");
+// // });
 
-app.post("/pusher/auth", (req, res) => {
-  const socketId = req.body.socket_id;
-  const channel = req.body.channel_name;
-  // Retrieve username from session and use as presence channel user_id
-  const presenceData = {
-    user_id: req.session.username,
-  };
-  const auth = pusher.authenticate(socketId, channel, presenceData);
-  res.send(auth);
-});
+// // app.post("/join-chat", (req, res) => {
+// //   // store username in session
+// //   req.session.username = req.body.username;
+// //   res.json("Joined");
+// // });
 
-app.post("/send-message", (req, res) => {
-  pusher.trigger("presence-groupChat", "message_sent", {
-    username: req.body.username,
-    message: req.body.message,
-  });
-  res.send("Message sent");
-});
+// // app.post("/pusher/auth", (req, res) => {
+// //   const socketId = req.body.socket_id;
+// //   const channel = req.body.channel_name;
+// //   // Retrieve username from session and use as presence channel user_id
+// //   const presenceData = {
+// //     user_id: req.session.username,
+// //   };
+// //   const auth = pusher.authenticate(socketId, channel, presenceData);
+// //   res.send(auth);
+// // });
+
+// // app.post("/send-message", (req, res) => {
+// //   pusher.trigger("presence-groupChat", "message_sent", {
+// //     username: req.body.username,
+// //     message: req.body.message,
+// //   });
+// //   res.send("Message sent");
+// // });
 
 // // **************************End pusher***************************
 
