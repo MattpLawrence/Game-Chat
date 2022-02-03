@@ -21,13 +21,14 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
   z-index: -1;
 }
 
 @media all and (min-width: 960px) {
   .desktop img {
     display: block;
+    object-fit: cover;
   }
   .mobile img {
     display: none;
