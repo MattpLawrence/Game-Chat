@@ -14,7 +14,7 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Weather Dashboard</title>
+  <title>Gamer Gabble</title>
 </head>
 <body>
 
@@ -46,46 +46,7 @@
   </header>
 
   <div class="container">
-    <div id="mainRow" class="row">
-      
-      <div class="col-12 col-md-3" id="sideBar"><h2 class="centerLabel" >Search By City</h2>
-        <div class="input-group">
-          <input type="search" class="form-control rounded" id="searchBar" placeholder="City" aria-label="Search"
-          aria-describedby="search-addon" />
-          <div id="buttonSpinner">
-            <button type="button" class="btn btn-primary" id="searchBtn">Search</button>
-            <div class="spinner-border" role="status" id="spinner">
-              <span class="sr-only">Loading...</span>
-            </div>
-          </div>
-          <ul id="notFound"></ul>
-          <h2 class="centerLabel">Previous Cities:</h2>
-          <ul id="searchBarList"></ul>
-        </div>
-      </div>
-      
-      <div id="today" class="col-11 col-md-9" >
-        <div class="row" id="weatherToday">
-          <h1 id="todayLabel">Todays Forecast:</h1>
-          <div id="todayCityDiv"></div>
-          <ul id="weatherTodayUL"></ul>
-        </div>
-        <div class="row" id="weatherFiveDay">
-          <div class="col-12" >
-            <div class="row" id="fiveDayLabel">
-              <h2>Five-Day Forecast:</h2>
-            </div>
-            <div class="row" id="weatherDays">
-              <div class="col-12 col-sm-12 col-md-12 col-lg-2 fiveDay" id="day1"></div>
-              <div class="col-12 col-sm-12 col-md-12 col-lg-2 fiveDay" id="day2"></div>
-              <div class="col-12 col-sm-12 col-md-12 col-lg-2 fiveDay" id="day3"></div>
-              <div class="col-12 col-sm-12 col-md-12 col-lg-2 fiveDay" id="day4"></div>
-              <div class="col-12 col-sm-12 col-md-12 col-lg-2 fiveDay" id="day5"></div>
-            </div>
-          </div>
-        </div>
-      </div>     
-    </div>
+    {{{body}}}
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
