@@ -23,10 +23,21 @@ app.use(
   })
 );
 
+//Body parser middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
 // set root of static assets tot he 'public' folder
 app.use(express.static(path.join(__dirname, "public")));
+
+// Create an instance of Pusher
+const pusher = new Pusher({
+  appId: process.env.PUSHER_APP_ID,
+  key: process.env.PUSHER_APP_KEY,
+  secret: process.env.PUSHER_APP_SECRET,
+  cluster: process.env.PUSHER_APP_CLUSTER,
+  encrypted: true,
+});
 
 app.use(routes);
 
