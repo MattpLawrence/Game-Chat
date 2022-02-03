@@ -13,31 +13,31 @@ UserProfile.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    nameUser: {
+    name_user: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
     },
-    passUser: {
+    pass_user: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    nameDisplay: {
+    name_display: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
     },
-    ageUser: {
+    age_user: {
       type: DataTypes.INTEGER,
       allowNull: false,
       unique: true,
     },
-    timeStart: {
+    time_start: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
     },
-    timeEnd: {
+    time_end: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,

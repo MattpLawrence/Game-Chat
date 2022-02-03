@@ -13,7 +13,7 @@ UserGames.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    idUser: {
+    id_user: {
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
@@ -21,12 +21,12 @@ UserGames.init(
         key: "id",
       },
     },
-    namePlatform: {
+    name_platform: {
       type: DataTypes.STRING,
       allowNull: false,
     },
     // DataTypes.ARRAY(DataTypes.STRING) not available for MySQL, need to save as STRING then split / join in JS
-    nameGame: {
+    name_game: {
       type: DataTypes.STRING,
       allowNull: false,
     },

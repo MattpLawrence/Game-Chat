@@ -13,12 +13,12 @@ GamesList.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    namePlatform: {
+    name_platform: {
       // DataTypes.ARRAY(DataTypes.STRING) not available for MySQL, need to save as STRING then split / join in JS
       type: DataTypes.STRING,
       allowNull: false,
     },
-    nameGame: {
+    name_game: {
       type: DataTypes.STRING,
       allowNull: false,
     },

@@ -1,46 +1,46 @@
 [
   {
-    "name_Platform": "PlayStation",
-    "name_Game": "Red Dead Redemption 2"
+    "name_platform": "PlayStation",
+    "name_game": "Red Dead Redemption 2"
   },
   {
-    "name_Platform": "Xbox",
-    "name_Game": "Red Dead Redemption 2"
+    "name_platform": "Xbox",
+    "name_game": "Red Dead Redemption 2"
   },
   {
-    "name_Platform": "PC / Mac",
-    "name_Game": "Red Dead Redemption 2"
+    "name_platform": "PC / Mac",
+    "name_game": "Red Dead Redemption 2"
   },
   {
-    "name_Platform": "Xbox",
-    "name_Game": "Halo Infinite"
+    "name_platform": "Xbox",
+    "name_game": "Halo Infinite"
   },
   {
-    "name_Platform": "Mobile Games",
-    "name_Game": "Forza Horizon 5"
+    "name_platform": "Mobile Games",
+    "name_game": "Forza Horizon 5"
   },
   {
-    "name_Platform": "Xbox",
-    "name_Game": "Forza Horizon 5"
+    "name_platform": "Xbox",
+    "name_game": "Forza Horizon 5"
   },
   {
-    "name_Platform": "PC / Mac",
-    "name_Game": "Forza Horizon 5"
+    "name_platform": "PC / Mac",
+    "name_game": "Forza Horizon 5"
   },
   {
-    "name_Platform": "Mobile Games",
-    "name_Game": "Minecraft"
+    "name_platform": "Mobile Games",
+    "name_game": "Minecraft"
   },
   {
-    "name_Platform": "PlayStation",
-    "name_Game": "Minecraft"
+    "name_platform": "PlayStation",
+    "name_game": "Minecraft"
   },
   {
-    "name_Platform": "PC / Mac",
-    "name_Game": "Minecraft"
+    "name_platform": "PC / Mac",
+    "name_game": "Minecraft"
   },
   {
-    "name_Platform": "Nintendo Switch",
-    "name_Game": "The Legend of Zelda: Breath of the Wild"
+    "name_platform": "Nintendo Switch",
+    "name_game": "The Legend of Zelda: Breath of the Wild"
   }
 ]
