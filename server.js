@@ -3,6 +3,8 @@ const path = require("path");
 const bodyParser = require("body-parser");
 const session = require("express-session");
 const Pusher = require("pusher");
+const handlebars = require("express-handlebars");
+const hbs = handlebars.create({});
 
 //require in models folder in order to generate the tables using sequelize
 const models = require("./models");
@@ -22,6 +24,10 @@ app.use(
     saveUninitialized: true,
   })
 );
+
+// set handlebars as default template engine
+app.engine("handlebars", hbs.engine);
+app.set("view engine", "handlebars");
 
 //Body parser middleware
 app.use(express.json());
