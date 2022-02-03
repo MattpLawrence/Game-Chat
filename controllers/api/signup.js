@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const res = require("express/lib/response");
+
 const { UserProfile } = require("../../models");
 
 //take info from body, save to dbGameChat
