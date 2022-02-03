@@ -1,6 +1,15 @@
 const router = require("express").Router();
+const Pusher = require("pusher");
 
 // *******************Pusher**********************
+// Create an instance of Pusher
+const pusher = new Pusher({
+  appId: process.env.PUSHER_APP_ID,
+  key: process.env.PUSHER_APP_KEY,
+  secret: process.env.PUSHER_APP_SECRET,
+  cluster: process.env.PUSHER_APP_CLUSTER,
+  encrypted: true,
+});
 
 router.get("/", (req, res) => {
   res.sendFile("index.html");
