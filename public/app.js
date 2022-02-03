@@ -1,7 +1,7 @@
 // public/app.js
 
-const pusher = new Pusher(process.env.PUSHER_APP_KEY, {
-  cluster: process.env.PUSHER_APP_CLUSTER,
+const pusher = new Pusher("c906f16a0111ecb603af", {
+  cluster: "mt1",
   encrypted: true,
   authEndpoint: "pusher/auth",
 });
