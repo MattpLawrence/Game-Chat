@@ -1,0 +1,47 @@
+[
+  {
+    "idUser": 1 ,
+    "namePlatform": "PlayStation",
+    "nameGame": "Red Dead Redemption 2, Minecraft"
+  },
+  {
+    "idUser": 1 ,
+    "namePlatform": "Mobile Games",
+    "nameGame": "Forza Horizon 5"
+  },
+  {
+    "idUser": 2 ,
+    "namePlatform": "Mobile Games",
+    "nameGame": "Forza Horizon 5"
+  },
+  {
+    "idUser": 3 ,
+    "namePlatform": "PlayStation",
+    "nameGame": "Minecraft"
+  },
+  {
+    "idUser": 2 ,
+    "namePlatform": "PlayStation",
+    "nameGame": "Minecraft"
+  },
+  {
+    "idUser": 2 ,
+    "namePlatform": "PC / Mac",
+    "nameGame": "Minecraft, Forza Horizon 5"
+  },
+  {
+    "idUser": 3 ,
+    "namePlatform": "Xbox",
+    "nameGame": "Halo Infinite, Red Dead Redemption 2"
+  },
+  {
+    "idUser": 3 ,
+    "namePlatform": "Nintendo Switch",
+    "nameGame": "The Legend of Zelda: Breath of the Wild"
+  },
+  {
+    "idUser": 2 ,
+    "namePlatform": "Nintendo Switch",
+    "nameGame": "The Legend of Zelda: Breath of the Wild"
+  }
+]
