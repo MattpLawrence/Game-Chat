@@ -20,11 +20,8 @@
   display: block;
 }
 
-.mainRow {
-  padding: 2rem 0;
-}
-
 /* *******************Landing page */
+
 .mainImg img {
   position: absolute;
   height: 100%;
@@ -35,6 +32,11 @@
 
 .mainRow {
   justify-content: space-around;
+  padding: 2rem 0;
+}
+
+#lpIntro {
+  padding: 7rem 0;
 }
 
 @media all and (min-width: 960px) {
