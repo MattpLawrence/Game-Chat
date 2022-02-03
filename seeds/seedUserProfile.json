@@ -1,26 +1,26 @@
 [
   {
-    "nameUser": "MattL",
-    "passUser": "CreativePassword",
-    "nameDisplay": "Matt",
-    "ageUser": "28",
-    "timeStart": "08:00AM",
-    "timeEnd": "02:00PM"
+    "name_user": "MattL",
+    "pass_user": "CreativePassword",
+    "name_display": "Matt",
+    "age_user": "28",
+    "time_start": "08:00AM",
+    "time_end": "02:00PM"
   },  
   {
-    "nameUser": "Tom Smith",
-    "passUser": "Password2",
-    "nameDisplay": "Smitty",
-    "ageUser": "32",
-    "timeStart": "06:00AM",
-    "timeEnd": "12:00PM"
+    "name_user": "Tom Smith",
+    "pass_user": "Password2",
+    "name_display": "Smitty",
+    "age_user": "32",
+    "time_start": "06:00AM",
+    "time_end": "12:00PM"
   },  
   {
-    "nameUser": "Ana Hernandez",
-    "passUser": "root1234",
-    "nameDisplay": "AnaH",
-    "ageUser": "15",
-    "timeStart": "08:00PM",
-    "timeEnd": "02:00AM"
+    "name_user": "Ana Hernandez",
+    "pass_user": "root1234",
+    "name_display": "AnaH",
+    "age_user": "15",
+    "time_start": "08:00PM",
+    "time_end": "02:00AM"
   }
 ]
