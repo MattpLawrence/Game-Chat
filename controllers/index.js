@@ -1,17 +1,12 @@
 const router = require("express").Router();
+const { append } = require("express/lib/response");
 const { GamesList, UserGames, UserProfile } = require("../models");
+
+// set usl path prefixes
 const apiRoutes = require("./api");
-// //router.get("/", async (req, res) => {
-//   try {
-//     // const dataUserProfile = await UserProfile.findAll();
-//     // const dataUserGames = await UserGames.findAll();
-//     const dataGamesList = await GamesList.findAll();
-//     console.log("got it");
-//     return res.status(200).json(dataGamesList);
-//   } catch (err) {
-//     console.log("error");
-//     return res.status(500).json(err);
-//   }
-//});
+const homeRoutes = require("./homeRoutes");
+
+router.use("/", homeRoutes);
 router.use("/api", apiRoutes);
+
 module.exports = router;

@@ -1,0 +1,71 @@
+:root {
+  --green: #1a8484;
+  --lightGreen: #54dddd;
+  --darkGreen: #075050;
+  --brightGreen: #28a745;
+}
+
+#logo {
+  color: var(--brightGreen);
+}
+.green {
+  color: var(--brightGreen);
+}
+
+.fontAwesome {
+  color: var(--green);
+  font-size: 1.2rem;
+}
+
+.fontAwesome:hover {
+  color: var(--lightGreen);
+}
+
+/* *******************Mobile/vs desktop */
+.desktop img {
+  display: none;
+}
+.mobile img {
+  display: block;
+}
+
+/* *******************Landing page */
+
+.mainImg img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.mainRow {
+  justify-content: space-around;
+  padding: 2rem 0;
+}
+
+#lpIntro {
+  padding: 7rem 0;
+}
+
+#btnSignUp {
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 5rem;
+  width: 10rem;
+  border-width: 4px;
+  font-weight: bolder;
+}
+
+#btnSignUp:hover {
+  background-color: var(--brightGreen);
+}
+
+@media all and (min-width: 960px) {
+  .desktop img {
+    display: block;
+    object-fit: cover;
+  }
+  .mobile img {
+    display: none;
+  }
+}

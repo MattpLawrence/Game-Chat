@@ -1,6 +1,10 @@
 const router = require("express").Router();
-const addGamesRoutes = require("./games.js");
+const addGames = require("./addGames");
+const chat = require("./chat");
+const signup = require("./signup");
 
-router.use("/add", addGamesRoutes);
+router.use("/addGames", addGames);
+router.use("/chat", chat);
+router.use("/signup", signup);
 
 module.exports = router;
