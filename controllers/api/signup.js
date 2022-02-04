@@ -12,8 +12,6 @@ router.post('/signupProfile', async(req, res) => {
   }
 });
 
-
-
 // reference api routes on loginPage.js to log in after creating account
 
 module.exports = router;
