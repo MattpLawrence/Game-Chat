@@ -16,6 +16,10 @@ app.use(express.urlencoded({ extended: true }));
 // set root of static assets tot he 'public' folder
 app.use(express.static(path.join(__dirname, "public")));
 
+// set handlebars as default template engine
+app.engine("handlebars", hbs.engine);
+app.set("view engine", "handlebars");
+
 app.use(routes);
 
 //make sure sequelize is connected before starting the server.
