@@ -1,8 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 :root {
   --green: #1a8484;
   --lightGreen: #54dddd;
   --darkGreen: #075050;
   --brightGreen: #28a745;
+  --dark-color-a: #667aff;
+  --dark-color-b: #7386ff;
+  --light-color: #e6e9ff;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+  --darkGray: #212529;
+  --gray: #31363b;
 }
 
 #logo {
@@ -64,20 +76,6 @@
 
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
-:root {
-  --dark-color-a: #667aff;
-  --dark-color-b: #7386ff;
-  --light-color: #e6e9ff;
-  --success-color: #5cb85c;
-  --error-color: #d9534f;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -94,10 +92,8 @@ a {
 
 /* Chat Page */
 
-#chatShadow {
-  padding: 0;
-  box-shadow: 0 10px 20px rgba(114, 113, 113, 0.19),
-    0 6px 6px rgba(158, 158, 158, 0.23);
+#sendBtn {
+  margin-left: 10px;
 }
 
 .chat-container {
@@ -109,8 +105,8 @@ a {
 
 .chat-header {
   padding-top: 1000px;
-  background: var(--darkGreen);
-  color: #fff;
+  background: var(--darkGray);
+  color: var(--brightGreen);
   padding: 15px;
   display: flex;
   align-items: center;
@@ -123,9 +119,8 @@ a {
 }
 
 .chat-sidebar {
-  border-top: 2px solid #54dddd4f;
-  background: var(--green);
-  color: #fff;
+  background: var(--gray);
+  color: var(--green);
   padding: 20px 20px 60px;
   overflow-y: scroll;
 }
@@ -148,7 +143,9 @@ a {
 .chat-messages {
   padding: 30px;
   max-height: 500px;
+  min-height: 400px;
   overflow-y: scroll;
+  /* background-color: #212529; */
 }
 
 .chat-messages .message {
@@ -172,7 +169,7 @@ a {
 
 .chat-form-container {
   padding: 20px 30px;
-  background-color: var(--darkGreen);
+  background-color: var(--darkGray);
 }
 
 .chat-form-container form {
