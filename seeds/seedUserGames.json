@@ -52,17 +52,12 @@
   {
     "id_user": 4 ,
     "name_platform": "PlayStation",
-    "name_game": "Minecraft"
+    "name_game": "Minecraft, Red Dead Redemption 2"
   },
   {
     "id_user": 4 ,
     "name_platform": "Nintendo Switch",
     "name_game": "The Legend of Zelda: Breath of the Wild"
-  },
-  {
-    "id_user": 4 ,
-    "name_platform": "PlayStation",
-    "name_game": "Red Dead Redemption 2"
   },
   {
     "id_user": 5 ,
@@ -191,6 +186,11 @@
   },
   {
     "id_user": 19 ,
+    "name_platform": "Xbox",
+    "name_game": "Sea of Thieves"
+  },
+  {
+    "id_user": 20 ,
     "name_platform": "Xbox",
     "name_game": "Sea of Thieves"
   }
