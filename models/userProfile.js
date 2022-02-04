@@ -30,17 +30,14 @@ UserProfile.init(
     age_user: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      unique: true,
     },
     time_start: {
       type: DataTypes.STRING,
       allowNull: false,
-      unique: true,
     },
     time_end: {
       type: DataTypes.STRING,
       allowNull: false,
-      unique: true,
     },
   },
   {
