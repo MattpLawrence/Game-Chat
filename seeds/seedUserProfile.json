@@ -143,4 +143,20 @@
     "time_start": "03:00PM",
     "time_end": "01:00AM"
   },
+  {
+    "name_user": "Anonymous",
+    "pass_user": "asdf123456789",
+    "name_display": "SuperHacker",
+    "age_user": "99",
+    "time_start": "03:00PM",
+    "time_end": "01:00AM"
+  },
+  {
+    "name_user": "Austin",
+    "pass_user": "defaultpassword",
+    "name_display": "DemonKiller",
+    "age_user": "21",
+    "time_start": "07:00PM",
+    "time_end": "11:30PM"
+  }
 ]
