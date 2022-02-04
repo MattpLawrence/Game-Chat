@@ -3,7 +3,7 @@ const { Model, DataTypes, ARRAY } = require("sequelize");
 //connect to the sequelize server created in config/connection
 const sequelize = require("../config/connection");
 
-class GamesList extends Model {}
+class GamesList extends Model {}.
 
 GamesList.init(
   {
