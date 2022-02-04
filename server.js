@@ -1,6 +1,8 @@
 const express = require("express");
 const sequelize = require("./config/connection");
 const path = require("path");
+const handlebars = require("express-handlebars");
+const hbs = handlebars.create({});
 //require in models folder in order to generate the tables using sequelize
 const models = require("./models");
 const routes = require("./controllers");
