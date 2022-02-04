@@ -49,10 +49,15 @@
 }
 
 #btnSignUp {
+  background-color: rgba(255, 255, 255, 0.3);
   height: 5rem;
   width: 10rem;
   border-width: 4px;
   font-weight: bolder;
+}
+
+#btnSignUp:hover {
+  background-color: var(--brightGreen);
 }
 
 @media all and (min-width: 960px) {
