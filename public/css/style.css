@@ -13,9 +13,12 @@
 }
 
 .fontAwesome {
-  height: 10px;
-  display: block;
-  color: white;
+  color: var(--green);
+  font-size: 1.2rem;
+}
+
+.fontAwesome:hover {
+  color: var(--lightGreen);
 }
 
 /* *******************Mobile/vs desktop */
