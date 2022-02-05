@@ -52,17 +52,12 @@
   {
     "id_user": 4 ,
     "name_platform": "PlayStation",
-    "name_game": "Minecraft"
+    "name_game": "Minecraft, Red Dead Redemption 2"
   },
   {
     "id_user": 4 ,
     "name_platform": "Nintendo Switch",
     "name_game": "The Legend of Zelda: Breath of the Wild"
-  },
-  {
-    "id_user": 4 ,
-    "name_platform": "PlayStation",
-    "name_game": "Red Dead Redemption 2"
   },
   {
     "id_user": 5 ,
@@ -117,12 +112,7 @@
   {
     "id_user": 10 ,
     "name_platform": "PlayStation",
-    "name_game": "Marvel's Spider-Man: Miles Morales"
-  },
-  {
-    "id_user": 10 ,
-    "name_platform": "PlayStation",
-    "name_game": "Minecraft"
+    "name_game": "Marvel's Spider-Man: Miles Morales, Minecraft"
   },
   {
     "id_user": 11 ,
@@ -167,32 +157,17 @@
   {
     "id_user": 15 ,
     "name_platform": "Mobile Games",
-    "name_game": "Forza Horizon 5"
-  },
-  {
-    "id_user": 15 ,
-    "name_platform": "Mobile Games",
-    "name_game": "Clash of Clans"
+    "name_game": "Forza Horizon 5, Clash of Clans"
   },
   {
     "id_user": 16 ,
     "name_platform": "Xbox",
-    "name_game": "Microsoft Flight Simulator"
-  },
-  {
-    "id_user": 16 ,
-    "name_platform": "Xbox",
-    "name_game": "Sea of Thieves"
+    "name_game": "Microsoft Flight Simulator, Sea of Thieves"
   },
   {
     "id_user": 17 ,
     "name_platform": "PlayStation",
-    "name_game": "Minecraft"
-  },
-  {
-    "id_user": 17 ,
-    "name_platform": "PlayStation",
-    "name_game": "Marvel's Spider-Man: Miles Morales"
+    "name_game": "Minecraft, Marvel's Spider-Man: Miles Morales"
   },
   {
     "id_user": 18 ,
@@ -213,5 +188,11 @@
     "id_user": 19 ,
     "name_platform": "Xbox",
     "name_game": "Sea of Thieves"
+  },
+  {
+    "id_user": 20 ,
+    "name_platform": "Xbox",
+    "name_game": "Sea of Thieves"
   }
+  
 ]

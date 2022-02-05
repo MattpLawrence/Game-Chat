@@ -3,11 +3,13 @@ const res = require("express/lib/response");
 const { UserProfile } = require("../../models");
 
 //take info from body, save to dbGameChat
-router.post('/signupProfile', async(req, res) => {
-  try{
+
+router.post("/signupProfile", async (req, res) => {
+  try {
     const userProfileData = await UserProfile.create(req.body);
     res.status(200).json(userProfileData);
-  } catch(err) {
+  } catch (err) {
+
     res.status(400).json(err);
   }
 });
