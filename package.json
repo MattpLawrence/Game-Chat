@@ -12,15 +12,13 @@
   },
   "author": "Matthew Lawrence",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MattpLawrence/Game-Chat/issues"
-  },
   "homepage": "https://github.com/MattpLawrence/Game-Chat#readme",
   "dependencies": {
     "connect-session-sequelize": "^7.1.2",
     "dotenv": "^15.0.1",
     "express": "^4.17.2",
     "express-handlebars": "^6.0.2",
+    "express-session": "^1.17.2",
     "mysql2": "^2.3.3",
     "sequelize": "^6.15.0",
     "socket.io": "^4.4.1"
