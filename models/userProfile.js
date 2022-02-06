@@ -29,7 +29,7 @@ UserProfile.init(
     },
     age_user: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
     time_start: {
       type: DataTypes.STRING,
