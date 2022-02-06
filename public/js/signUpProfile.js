@@ -17,12 +17,18 @@ function checkInputs() {
     if (frmRegister.children.length < 6) {
       console.log(frmRegister.children.length);
       alert.innerHTML = `*Please enter a username with at least 6 characters.`;
-      // alert.text("Please enter").css("color", "red").addClass("error-txt");
       frmRegister.append(alert);
     } else {
       frmRegister.firstElementChild.remove;
-      console.log("else");
     }
-  } else {
+  }
+  if (!(nameDisplay.value.length >= 4)) {
+    if (frmRegister.children.length < 6) {
+      console.log(frmRegister.children.length);
+      alert.innerHTML = `*Please enter a screen name with at least 4 characters.`;
+      frmRegister.append(alert);
+    } else {
+      frmRegister.firstElementChild.remove;
+    }
   }
 }
