@@ -56,5 +56,68 @@ function checkInputs() {
     }
   } else {
     console.log("complete");
+    postUser()
+  //   const response = await post(`/api/signup/signupProfile`, {
+  //     method: "POST",
+  //     body: JSON.stringify({
+  //       name_user,
+  //       pass_user,
+  //       name_display,
+  //       age_user,
+  //       time_start,
+  //       time_end,
+  //     }),
+  //     headers: {
+  //       name_user: nameUser.value,
+  //       pass_user: password.value,
+  //       name_display: nameDisplay.value,
+  //       age_user: "1",
+  //       time_start: "06:00AM",
+  //       time_end: "12:00PM",
+  //     },
+  //   });
+
+  //   if (response.ok) {
+  //     console.log("success");
+  //     // document.location.replace("/profile");
+  //   } else {
+  //     alert("Failed to create project");
+  //   }
+  // }
+}
+
+let postUser = async() => {
+
+  const user = document.querySelector('#project-name').value.trim();
+  const display = document.querySelector('#project-funding').value.trim();
+  const pass = document.querySelector('#project-desc').value.trim();
+
+  if(user && display && pass)
+    const response = await post(`/api/signup/signupProfile`, {
+      method: "POST",
+      body: JSON.stringify({
+        name_user,
+        pass_user,
+        name_display,
+        age_user,
+        time_start,
+        time_end,
+      }),
+      headers: {
+        name_user: user,
+        pass_user: pass,
+        name_display: display,
+        age_user: "1",
+        time_start: "06:00AM",
+        time_end: "12:00PM",
+      },
+    });
+
+    if (response.ok) {
+      console.log("success");
+      // document.location.replace("/profile");
+    } else {
+      alert("Failed to create project");
+    };
   }
 }
