@@ -4,11 +4,13 @@ const handlebars = require("express-handlebars");
 const hbs = handlebars.create({});
 const http = require("http");
 const socketio = require("socket.io");
+const session = require("express-session");
 
 //require in models folder in order to generate the tables using sequelize
 const models = require("./models");
 const routes = require("./controllers");
 const sequelize = require("./config/connection");
+const SequelizeStore = require("connect-session-sequelize")(session.Store);
 const formatMessage = require("./utils/messages");
 const {
   userJoin,
@@ -33,6 +35,20 @@ app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 
 app.use(routes);
+
+// **************************************Session*********************************
+
+const sess = {
+  secret: "Super secret secret",
+  cookie: {},
+  resave: false,
+  saveUninitialized: true,
+  store: new SequelizeStore({
+    db: sequelize,
+  }),
+};
+
+app.use(session(sess));
 
 // ************************************Socket.io**************************************
 const botName = "Gamer Gabble Bot";
@@ -89,7 +105,7 @@ io.on("connection", (socket) => {
   });
 });
 
-// ************************************Socket.io**************************************
+// ************************************Server listen**********************************
 
 server.listen(PORT, () => console.log(`server running on port ${PORT}`));
 
