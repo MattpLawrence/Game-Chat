@@ -30,7 +30,7 @@ router.get("/chat", async (req, res) => {
   }
 });
 //display initial signup page
-router.get("/signup", async (req, res) => {
+router.get("/signupProfile", async (req, res) => {
   try {
     res.render("signupProfile", {});
   } catch (err) {
@@ -38,9 +38,9 @@ router.get("/signup", async (req, res) => {
   }
 });
 //display initial login page
-router.get("/signup", async (req, res) => {
+router.get("/loginPage", async (req, res) => {
   try {
-    res.render("signupProfile", {});
+    res.render("loginPage", {});
   } catch (err) {
     res.status(500).json(err);
   }
