@@ -23,7 +23,7 @@ module.exports = router;
 
 router.get("/chat", async (req, res) => {
   try {
-    res.render("chat", {});
+    res.render("chat", { chat_on: "yes" });
   } catch (err) {
     res.status(500).json(err);
   }

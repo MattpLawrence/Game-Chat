@@ -77,6 +77,9 @@
   {{!-- <script src="../../node_modules/socket.io/socket.io.js"></script> --}}
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
   <script type="text/javascript" src="/socket.io/socket.io.js"></script>
-  <script src="js/main.js"></script>
+
+  {{#if chat_on}}
+  <script src="/js/main.js"></script>
+  {{/if}}
 
 </html>
