@@ -1,0 +1,162 @@
+[
+  {
+    "name_user": "MattL",
+    "pass_user": "CreativePassword",
+    "name_display": "Matt",
+    "age_user": "28",
+    "time_start": "08:00AM",
+    "time_end": "02:00PM"
+  },  
+  {
+    "name_user": "Tom Smith",
+    "pass_user": "Password2",
+    "name_display": "Smitty",
+    "age_user": "32",
+    "time_start": "06:00AM",
+    "time_end": "12:00PM"
+  },  
+  {
+    "name_user": "Ana Hernandez",
+    "pass_user": "root1234",
+    "name_display": "AnaH",
+    "age_user": "15",
+    "time_start": "08:00PM",
+    "time_end": "02:00AM"
+  },
+  {
+    "name_user": "James",
+    "pass_user": "drowssap",
+    "name_display": "James",
+    "age_user": "23",
+    "time_start": "03:00PM",
+    "time_end": "01:00AM"
+  },
+  {
+    "name_user": "Robert",
+    "pass_user": "ironman123",
+    "name_display": "marvalfan99",
+    "age_user": "22",
+    "time_start": "08:00AM",
+    "time_end": "02:30PM"
+  },
+  {
+    "name_user": "john",
+    "pass_user": "bestpasswordever1234",
+    "name_display": "John the Man",
+    "age_user": "39",
+    "time_start": "10:30AM",
+    "time_end": "01:30PM"
+  },
+  {
+    "name_user": "Michael",
+    "pass_user": "verycreativepassword",
+    "name_display": "EpicSlayer426",
+    "age_user": "27",
+    "time_start": "02:00PM",
+    "time_end": "08:00PM"
+  },
+  {
+    "name_user": "Mary",
+    "pass_user": "securePassword",
+    "name_display": "Grandma4life5",
+    "age_user": "64",
+    "time_start": "01:42PM",
+    "time_end": "10:07PM"
+  },
+  {
+    "name_user": "William",
+    "pass_user": "Sandwich1234",
+    "name_display": "JimmysJohns",
+    "age_user": "46",
+    "time_start": "02:11PM",
+    "time_end": "05:44PM"
+  },
+  {
+    "name_user": "David",
+    "pass_user": "SpecialCharacter1234",
+    "name_display": "SingleFather1999",
+    "age_user": "40",
+    "time_start": "09:15AM",
+    "time_end": "03:10PM"
+  },
+  {
+    "name_user": "Richard",
+    "pass_user": "MyDogsName22",
+    "name_display": "CoolGuy",
+    "age_user": "28",
+    "time_start": "08:26PM",
+    "time_end": "01:21AM"
+  },
+  {
+    "name_user": "Hannah",
+    "pass_user": "DontShareThisWithYourFriends",
+    "name_display": "LiveLaughLove32",
+    "age_user": "56",
+    "time_start": "09:00AM",
+    "time_end": "10:44AM"
+  },
+  {
+    "name_user": "Madison",
+    "pass_user": "1234password",
+    "name_display": "Madi02",
+    "age_user": "19",
+    "time_start": "01:07PM",
+    "time_end": "08:22PM"
+  },
+  {
+    "name_user": "Jacob",
+    "pass_user": "StrongPassword",
+    "name_display": "BigJ",
+    "age_user": "34",
+    "time_start": "01:54PM",
+    "time_end": "07:18PM"
+  },
+  {
+    "name_user": "Mathew",
+    "pass_user": "weakpassword",
+    "name_display": "EliteGamer",
+    "age_user": "19",
+    "time_start": "08:00PM",
+    "time_end": "07:00AM"
+  },
+  {
+    "name_user": "Brandon",
+    "pass_user": "asdf1234",
+    "name_display": "HipHopEnjoyer",
+    "age_user": "42",
+    "time_start": "01:00PM",
+    "time_end": "06:00PM"
+  },
+  {
+    "name_user": "Andrew",
+    "pass_user": "qwerty",
+    "name_display": "Barbarian",
+    "age_user": "28",
+    "time_start": "02:00PM",
+    "time_end": "09:00PM"
+  },
+  {
+    "name_user": "Nicholas",
+    "pass_user": "asdasd",
+    "name_display": "SaintNick",
+    "age_user": "43",
+    "time_start": "03:00PM",
+    "time_end": "01:00AM"
+  },
+  {
+    "name_user": "Anonymous",
+    "pass_user": "asdf123456789",
+    "name_display": "SuperHacker",
+    "age_user": "99",
+    "time_start": "03:00PM",
+    "time_end": "01:00AM"
+  },
+  {
+    "name_user": "Austin",
+    "pass_user": "defaultpassword",
+    "name_display": "DemonKiller",
+    "age_user": "21",
+    "time_start": "07:00PM",
+    "time_end": "11:30PM"
+  }
+]

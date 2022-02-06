@@ -1,0 +1,197 @@
+[
+  {
+    "id_user": 1 ,
+    "name_platform": "PlayStation",
+    "name_game": "Red Dead Redemption 2, Minecraft"
+  },
+  {
+    "id_user": 1 ,
+    "name_platform": "Mobile Games",
+    "name_game": "Forza Horizon 5"
+  },
+  {
+    "id_user": 2 ,
+    "name_platform": "Mobile Games",
+    "name_game": "Forza Horizon 5"
+  },
+  {
+    "id_user": 3 ,
+    "name_platform": "PlayStation",
+    "name_game": "Minecraft"
+  },
+  {
+    "id_user": 2 ,
+    "name_platform": "PlayStation",
+    "name_game": "Minecraft"
+  },
+  {
+    "id_user": 2 ,
+    "name_platform": "PC / Mac",
+    "name_game": "Minecraft, Forza Horizon 5"
+  },
+  {
+    "id_user": 3 ,
+    "name_platform": "Xbox",
+    "name_game": "Halo Infinite, Red Dead Redemption 2"
+  },
+  {
+    "id_user": 3 ,
+    "name_platform": "Nintendo Switch",
+    "name_game": "The Legend of Zelda: Breath of the Wild"
+  },
+  {
+    "id_user": 2 ,
+    "name_platform": "Nintendo Switch",
+    "name_game": "The Legend of Zelda: Breath of the Wild"
+  },
+  {
+    "id_user": 4 ,
+    "name_platform": "Xbox",
+    "name_game": "Halo Infinite, Forza Horizon 5"
+  },
+  {
+    "id_user": 4 ,
+    "name_platform": "PlayStation",
+    "name_game": "Minecraft, Red Dead Redemption 2"
+  },
+  {
+    "id_user": 4 ,
+    "name_platform": "Nintendo Switch",
+    "name_game": "The Legend of Zelda: Breath of the Wild"
+  },
+  {
+    "id_user": 5 ,
+    "name_platform": "PC / Mac",
+    "name_game": "Elden Ring"
+  },
+  {
+    "id_user": 5 ,
+    "name_platform": "Nintendo Switch",
+    "name_game": "Mario Kart 8"
+  },
+  {
+    "id_user": 6 ,
+    "name_platform": "PlayStation",
+    "name_game": "Minecraft"
+  },
+  {
+    "id_user": 6 ,
+    "name_platform": "Xbox",
+    "name_game": "Red Dead Redemption 2"
+  },
+  {
+    "id_user": 7 ,
+    "name_platform": "Mobile Games",
+    "name_game": "Amung us"
+  },
+  {
+    "id_user": 7 ,
+    "name_platform": "Nintendo Switch",
+    "name_game": "Mario Party™ Superstars"
+  },
+  {
+    "id_user": 8 ,
+    "name_platform": "PC / Mac",
+    "name_game": "Apex Legends"
+  },
+  {
+    "id_user": 8 ,
+    "name_platform": "Xbox",
+    "name_game": "Halo Infinite"
+  },
+  {
+    "id_user": 9 ,
+    "name_platform": "Nintendo Switch",
+    "name_game": "Animal Crossing: New Horizons"
+  },
+  {
+    "id_user": 9 ,
+    "name_platform": "Xbox",
+    "name_game": "Microsoft Flight Simulator"
+  },
+  {
+    "id_user": 10 ,
+    "name_platform": "PlayStation",
+    "name_game": "Marvel's Spider-Man: Miles Morales, Minecraft"
+  },
+  {
+    "id_user": 11 ,
+    "name_platform": "Mobile Games",
+    "name_game": "Amung us"
+  },
+  {
+    "id_user": 11 ,
+    "name_platform": "Nintendo Switch",
+    "name_game": "Stardew Valley"
+  },
+  {
+    "id_user": 12 ,
+    "name_platform": "PC / Mac",
+    "name_game": "Minecraft"
+  },
+  {
+    "id_user": 12 ,
+    "name_platform": "PlayStation",
+    "name_game": "Bloodborne"
+  },
+  {
+    "id_user": 13 ,
+    "name_platform": "Xbox",
+    "name_game": "Sea of Thieves"
+  },
+  {
+    "id_user": 13 ,
+    "name_platform": "PlayStation",
+    "name_game": "Call of Duty Vanguard"
+  },
+  {
+    "id_user": 14 ,
+    "name_platform": "Nintendo Switch",
+    "name_game": "Mario Kart 8"
+  },
+  {
+    "id_user": 14 ,
+    "name_platform": "Mobile Games",
+    "name_game": "Minecraft"
+  },
+  {
+    "id_user": 15 ,
+    "name_platform": "Mobile Games",
+    "name_game": "Forza Horizon 5, Clash of Clans"
+  },
+  {
+    "id_user": 16 ,
+    "name_platform": "Xbox",
+    "name_game": "Microsoft Flight Simulator, Sea of Thieves"
+  },
+  {
+    "id_user": 17 ,
+    "name_platform": "PlayStation",
+    "name_game": "Minecraft, Marvel's Spider-Man: Miles Morales"
+  },
+  {
+    "id_user": 18 ,
+    "name_platform": "Xbox",
+    "name_game": "Red Dead Redemption 2"
+  },
+  {
+    "id_user": 18 ,
+    "name_platform": "PC / Mac",
+    "name_game": "Forza Horizon 5"
+  },
+  {
+    "id_user": 19 ,
+    "name_platform": "Mobile Games",
+    "name_game": "PUBG Mobile"
+  },
+  {
+    "id_user": 19 ,
+    "name_platform": "Xbox",
+    "name_game": "Sea of Thieves"
+  },
+  {
+    "id_user": 20 ,
+    "name_platform": "Xbox",
+    "name_game": "Sea of Thieves"
+  }
+]
