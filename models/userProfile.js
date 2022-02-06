@@ -33,11 +33,11 @@ UserProfile.init(
     },
     time_start: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     time_end: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
   },
   {
