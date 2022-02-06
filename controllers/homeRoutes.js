@@ -30,9 +30,9 @@ router.get("/chat", async (req, res) => {
   }
 });
 //display initial signup page
-router.get("/signupProfile", async (req, res) => {
+router.get("/signUpProfile", async (req, res) => {
   try {
-    res.render("signupProfile", {});
+    res.render("signUpProfile", {});
   } catch (err) {
     res.status(500).json(err);
   }
