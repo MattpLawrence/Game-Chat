@@ -34,6 +34,17 @@ app.set("view engine", "handlebars");
 
 app.use(routes);
 
+// **************************************Session*********************************
+const sess = {
+  secret: "Super secret secret",
+  cookie: {},
+  resave: false,
+  saveUninitialized: true,
+  store: new SequelizeStore({
+    db: sequelize,
+  }),
+};
+
 // ************************************Socket.io**************************************
 const botName = "Gamer Gabble Bot";
 
