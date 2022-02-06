@@ -19,6 +19,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="./public/css/style.css">
+  <link rel="stylesheet" href="./public/css/chatStyle.css">
   <title>Gamer Gabble</title>
 </head>
 <body>
@@ -34,8 +35,19 @@
         <a class="nav-link" href="https://www.twitch.tv/" target="_blank">
           <i class="fab fa-twitch fontAwesome"></i>
         </a>
+        <a class="nav-link" href="https://store.steampowered.com/" target="_blank">
+          <i class="fab fa-steam fontAwesome"></i>
+        </a>
+        <a class="nav-link" href="https://www.microsoft.com/en-us/store/b/xbox" target="_blank">
+          <i class="fab fa-xbox fontAwesome"></i>
+        </a>
+        <a class="nav-link" href="https://www.playstation.com/en-us/ps5/" target="_blank">
+          <i class="fab fa-playstation fontAwesome"></i>
+        </a>
+        <a class="nav-link" href="https://www.nintendo.com/switch/" target="_blank">
+          <i class="fas fa-gamepad fontAwesome"></i>
+        </a>
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item"></li><i class="fab fa-twitch"></i></li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log In</button>
@@ -52,19 +64,42 @@
 </div>
 
   <div class="container">
-    <div class="container">
-      <div class="row mainRow" id="lpIntro">
-        <div class="col-sm-6 text-center">
-          <h2 class="green">Some content about the product</h2>
-        </div>
-      </div>
-      <div class="row mainRow" >
-        <div class="col-sm-6 text-center">
-          <button class="btn btn-outline-success my-2 my-sm-0" id="btn" type="submit">Log In</button>
+    <div class="container" id= "chatShadow">
+      <div class="chat-container">
+        <header class="chat-header">
+          <h1>Gamer Gabble</h1>
+          <a href="index.html" class="btn btn-outline-success my-2 my-sm-0">Leave Room</a>
+        </header>
+        <main class="chat-main">
+          <div class="chat-sidebar">
+            <h3><i class="fas fa-comments"></i> Room:</h3>
+            <h2 id="room-name">JavaScript</h2>
+            <h3><i class="fas fa-users"></i> Users</h3>
+            <ul id="users">
+            </ul>
+          </div>
+          <div class="chat-messages">
+          </div>
+        </main>
+        <div class="chat-form-container">
+          <form id="chat-form">
+            <input
+              id="msg"
+              type="text"
+              placeholder="Enter Message"
+              required
+              autocomplete="off"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" id="sendBtn"><i class="fas fa-paper-plane"></i> Send</button>
+          </form>
         </div>
       </div>
     </div>
   </div>
+
+</body>
+</html>
+</div>
 
 </body>
 </html>
