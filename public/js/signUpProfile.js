@@ -24,8 +24,7 @@ function checkInputs() {
       alert.innerHTML = `*Please enter a username with at least 6 characters.`;
       frmRegister.append(alert);
     }
-  }
-  if (!(nameDisplay.value.length >= 4)) {
+  } else if (!(nameDisplay.value.length >= 4)) {
     if (frmRegister.children.length < 6) {
       console.log(frmRegister.children.length);
       alert.innerHTML = `*Please enter a screen name with at least 4 characters.`;
@@ -35,8 +34,7 @@ function checkInputs() {
       alert.innerHTML = `*Please enter a screen name with at least 4 characters.`;
       frmRegister.append(alert);
     }
-  }
-  if (!(password.value.length >= 6)) {
+  } else if (!(password.value.length >= 4)) {
     if (frmRegister.children.length < 6) {
       console.log(frmRegister.children.length);
       alert.innerHTML = `*Please enter a password with at least 4 characters.`;
@@ -46,9 +44,7 @@ function checkInputs() {
       alert.innerHTML = `*Please enter a password with at least 4 characters.`;
       frmRegister.append(alert);
     }
-  }
-
-  if (!(password.value === confirmPassword)) {
+  } else if (!(password.value === confirmPassword.value)) {
     if (frmRegister.children.length < 6) {
       console.log(frmRegister.children.length);
       alert.innerHTML = `*Your passwords do not match`;
@@ -58,5 +54,7 @@ function checkInputs() {
       alert.innerHTML = `*Your passwords do not match`;
       frmRegister.append(alert);
     }
+  } else {
+    console.log("complete");
   }
 }
