@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const { GamesList, UserGames, UserProfile } = require("../models");
 const withAuth = require("../utils/auth");
+const path = require("path");
 
 router.get("/", async (req, res) => {
   try {
@@ -22,8 +23,7 @@ module.exports = router;
 
 router.get("/chat", async (req, res) => {
   try {
-    console.log("try");
-    res.sendFile(path.join(__dirname, "/chat.html"));
+    res.sendFile(path.join(__dirname, "../public/html/chat.html"));
   } catch (err) {
     res.status(500).json(err);
   }
