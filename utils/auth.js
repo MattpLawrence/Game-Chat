@@ -6,5 +6,12 @@ const withAuth = (req, res, next) => {
     next();
   }
 };
+const hasAuth = (req, res, next) => {
+  if (req.session.logged_in) {
+    return true;
+  } else {
+    false;
+  }
+};
 
-module.exports = withAuth;
+module.exports = { withAuth, hasAuth };
