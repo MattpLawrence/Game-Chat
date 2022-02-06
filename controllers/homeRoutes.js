@@ -23,7 +23,7 @@ module.exports = router;
 
 router.get("/chat", async (req, res) => {
   try {
-    res.sendFile(path.join(__dirname, "../public/html/chat.html"));
+    res.render("chat", {});
   } catch (err) {
     res.status(500).json(err);
   }
