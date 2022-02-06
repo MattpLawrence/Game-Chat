@@ -34,6 +34,10 @@
   color: var(--lightGreen);
 }
 
+.alert {
+  text-align: center;
+  color: var(--error-color);
+}
 /* *******************Mobile/vs desktop */
 .desktop img {
   display: none;
