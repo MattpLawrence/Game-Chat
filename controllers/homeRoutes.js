@@ -19,7 +19,6 @@ router.get("/addGames:id", async (req, res) => {
     res.status(500).json(err);
   }
 });
-module.exports = router;
 
 router.get("/chat", async (req, res) => {
   try {
@@ -28,3 +27,13 @@ router.get("/chat", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+router.get("/signup", async (req, res) => {
+  try {
+    res.render("signupProfile", { chat_on: "yes" });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+module.exports = router;
