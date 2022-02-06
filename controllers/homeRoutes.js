@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const { GamesList, UserGames, UserProfile } = require("../models");
-const withAuth = require("../utils/auth");
+// const withAuth = require("../utils/auth");
+const path = require("path");
 
 router.get("/", async (req, res) => {
   try {
@@ -19,3 +20,11 @@ router.get("/addGames:id", async (req, res) => {
   }
 });
 module.exports = router;
+
+router.get("/chat", async (req, res) => {
+  try {
+    res.render("chat", { chat_on: "yes" });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});

@@ -1,9 +1,13 @@
 // seed the database with initial/ test data
 
 //connect to sequelize
-const sequelize = require("../config/connection");
+const sequelize = require("../../Game-Chat/config/connection");
 //require tables
-const { UserProfile, UserGames, GamesList } = require("../models/index");
+const {
+  UserProfile,
+  UserGames,
+  GamesList,
+} = require("../../Game-Chat/models/index");
 
 //require in .json seed files
 

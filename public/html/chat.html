@@ -19,10 +19,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.css">
-
-
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
   <title>Gamer Gabble</title>
 </head>
 <body>
@@ -65,23 +62,46 @@
 <div class= "mainImg desktop">
   <img src="/images/backgroundLanding.jpg">
 </div>
-
   <div class="container">
-    {{{body}}}
+    <div class="container" id= "chatShadow">
+      <div class="chat-container">
+        <header class="chat-header">
+          <h1>Gamer Gabble</h1>
+          <a href="index.html" class="btn btn-outline-success my-2 my-sm-0">Leave Room</a>
+        </header>
+        <main class="chat-main">
+          <div class="chat-sidebar">
+            <h3><i class="fas fa-comments"></i> Room:</h3>
+            <h2 id="room-name">JavaScript</h2>
+            <h3><i class="fas fa-users"></i> Users</h3>
+            <ul id="users">
+            </ul>
+          </div>
+          <div class="chat-messages">
+          </div>
+        </main>
+        <div class="chat-form-container">
+          <form id="chat-form">
+            <input
+              id="msg"
+              type="text"
+              placeholder="Enter Message"
+              required
+              autocomplete="off"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" id="sendBtn"><i class="fas fa-paper-plane"></i> Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
-
-
 
 </body>
   <!-- query string selector -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.3/qs.min.js" integrity="sha512-juaCj8zi594KHQqb92foyp87mCSriYjw3BcTHaXsAn4pEB1YWh+z+XQScMxIxzsjfM4BeVFV3Ij113lIjWiC2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- added to connect to socket.io -->
-  {{!-- <script src="../../node_modules/socket.io/socket.io.js"></script> --}}
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
-
-  {{#if chat_on}}
-  <script src="/js/main.js"></script>
-  {{/if}}
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- <script src="../js/main.js"></script> -->
 
 </html>
