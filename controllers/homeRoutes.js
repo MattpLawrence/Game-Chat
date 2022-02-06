@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const { GamesList, UserGames, UserProfile } = require("../models");
-const withAuth = require("../utils/auth");
+// const withAuth = require("../utils/auth");
 const path = require("path");
 
 router.get("/", async (req, res) => {
