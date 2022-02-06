@@ -3,6 +3,7 @@ const { GamesList, UserGames, UserProfile } = require("../models");
 // const withAuth = require("../utils/auth");
 const path = require("path");
 
+//display initial homepage
 router.get("/", async (req, res) => {
   try {
     res.render("landingPage", {});
@@ -20,6 +21,7 @@ router.get("/addGames:id", async (req, res) => {
   }
 });
 
+//display initial chat
 router.get("/chat", async (req, res) => {
   try {
     res.render("chat", { chat_on: "yes" });
@@ -27,10 +29,18 @@ router.get("/chat", async (req, res) => {
     res.status(500).json(err);
   }
 });
-
+//display initial signup page
 router.get("/signup", async (req, res) => {
   try {
-    res.render("signupProfile", { chat_on: "yes" });
+    res.render("signupProfile", {});
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+//display initial login page
+router.get("/signup", async (req, res) => {
+  try {
+    res.render("signupProfile", {});
   } catch (err) {
     res.status(500).json(err);
   }
