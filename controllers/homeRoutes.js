@@ -33,7 +33,7 @@ router.get("/chat", async (req, res) => {
 //display initial signup page
 router.get("/signUpProfile", async (req, res) => {
   try {
-    res.render("signUpProfile", {});
+    res.render("signUpProfile", { signUpProfile: "yes" });
   } catch (err) {
     res.status(500).json(err);
   }
