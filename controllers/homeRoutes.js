@@ -22,7 +22,8 @@ module.exports = router;
 
 router.get("/chat", async (req, res) => {
   try {
-    res.render("chat", {});
+    console.log("try");
+    res.sendFile(path.join(__dirname, "/chat.html"));
   } catch (err) {
     res.status(500).json(err);
   }
