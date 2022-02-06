@@ -27,6 +27,7 @@
 .fontAwesome {
   color: var(--green);
   font-size: 1.2rem;
+  display: flex;
 }
 
 .fontAwesome:hover {
@@ -264,6 +265,19 @@ a {
 .join-main .btn {
   margin-top: 20px;
   width: 100%;
+}
+
+@media (max-width: 380px) {
+  .fontAwesome {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .nav-link {
+    padding: 0 0.2rem;
+    display: flex;
+  }
 }
 
 @media (max-width: 700px) {
