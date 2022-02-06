@@ -10,28 +10,26 @@ console.log("yup");
 btnRegister.addEventListener("click", checkInputs);
 
 let postUser = async () => {
-  const user = nameUser.value.trim();
+  const user_name = nameUser.value.trim();
   const display = nameDisplay.value.trim();
   const pass = password.value.trim();
+  const age = 1;
+  const start = "1";
+  const end = "2";
 
   if (user && display && pass) {
-    const response = await post(`/api/signup/signupProfile`, {
+    const response = await fetch(`/api/signup/signupProfile`, {
       method: "POST",
       body: JSON.stringify({
         name_user,
         pass_user,
         name_display,
-        age_user,
-        time_start,
-        time_end,
+        age,
+        start,
+        end,
       }),
       headers: {
-        name_user: user,
-        pass_user: pass,
-        name_display: display,
-        age_user: "1",
-        time_start: "06:00AM",
-        time_end: "12:00PM",
+        "content-type": "application / json",
       },
     });
 
