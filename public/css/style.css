@@ -82,8 +82,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 #msg {
-  /* border-style: none; */
-  border-radius: 0.4rem;
+  border-style: none;
+  border-radius: 0.25rem;
+  background-color: var(--light-color);
 }
 
 body {
@@ -221,7 +222,7 @@ a {
   color: white;
 }
 .chat-form-container input[type="text"]::placeholder {
-  color: var(--green);
+  color: black;
 }
 
 /* Join Page */
