@@ -301,7 +301,7 @@ a {
   }
   .my-2 {
     margin-top: 0px !important;
-    height: 40px;
+    min-height: 40px;
   }
 }
 
