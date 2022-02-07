@@ -28,8 +28,6 @@ let checkCredentials = async () => {
       console.log("success");
       document.location.replace(`/chat?username=${name_user}`);
     } else {
-      alert("Invalid Username and Password.");
-
       //if duplicate entry alert the user to try different names
       if (loginForm.children.length <= 6) {
         console.log(loginForm.children.length);
