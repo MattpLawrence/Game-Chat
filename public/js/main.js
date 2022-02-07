@@ -50,3 +50,15 @@ function outputMessage(message) {
 
   document.querySelector(".chat-messages").appendChild(div);
 }
+
+// add room name to dom
+function outputRoomName(room) {
+  roomName.innerText = room;
+}
+
+//add users to dom
+function outputUsers(users) {
+  userList.innerHTML = `
+  ${users.map((user) => `<li>${user.username}</li>`).join("")}
+  `;
+}
