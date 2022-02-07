@@ -26,6 +26,20 @@ const io = socketio(server);
 
 const PORT = process.env.PORT || 3001;
 
+// **************************************Session*********************************
+
+const sess = {
+  secret: "Super secret secret",
+  cookie: {},
+  resave: false,
+  saveUninitialized: true,
+  store: new SequelizeStore({
+    db: sequelize,
+  }),
+};
+
+app.use(session(sess));
+
 app.use(
   bodyParser.urlencoded({
     extended: true,
@@ -44,20 +58,6 @@ app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 
 app.use(routes);
-
-// **************************************Session*********************************
-
-const sess = {
-  secret: "Super secret secret",
-  cookie: {},
-  resave: false,
-  saveUninitialized: true,
-  store: new SequelizeStore({
-    db: sequelize,
-  }),
-};
-
-app.use(session(sess));
 
 // ************************************Socket.io**************************************
 const botName = "Gamer Gabble Bot";

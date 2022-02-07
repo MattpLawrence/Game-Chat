@@ -7,6 +7,8 @@ router.post("/", async (req, res) => {
       where: { name_user: req.body.name_user },
     });
     let password = userProfileData.pass_user;
+
+    console.log(password);
     if (!userProfileData) {
       res
         .status(200)
@@ -18,7 +20,7 @@ router.post("/", async (req, res) => {
     } else {
       console.log(userProfileData);
       // set up session on login success
-      console.log("session:" + req.session);
+      // console.log(req.session);
       req.session.save(() => {
         req.session.user_id = userProfileData.id;
         req.session.logged_in = true;
