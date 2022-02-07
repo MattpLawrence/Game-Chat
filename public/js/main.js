@@ -14,10 +14,10 @@ const socket = io();
 socket.emit("joinRoom", { username, room });
 
 // get room and users
-socket.on("roomUsers", ({ room, users }) => {
-  // outputRoomName(room);
-  outputUsers(users);
-});
+// socket.on("roomUsers", ({ room, users }) => {
+//   // outputRoomName(room);
+//   outputUsers(users);
+// });
 
 //Message from server
 socket.on("message", (message) => {
@@ -63,8 +63,8 @@ function outputMessage(message) {
 // }
 
 //add users to dom
-function outputUsers(users) {
-  userList.innerHTML = `
-  ${users.map((user) => `<li>${user.username}</li>`).join("")}
-  `;
-}
+// function outputUsers(users) {
+//   userList.innerHTML = `
+//   ${users.map((user) => `<li>${user.username}</li>`).join("")}
+//   `;
+// }
