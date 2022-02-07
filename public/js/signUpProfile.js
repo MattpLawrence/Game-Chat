@@ -9,9 +9,12 @@ let alert = document.createElement("h3");
 alert.classList.add("alert");
 
 let postUser = async () => {
+  // auto capitalize display and username
   string = nameUser.value.trim();
   let name_user = string[0].toUpperCase() + string.slice(1);
-  const name_display = nameDisplay.value.trim();
+  string = nameDisplay.value.trim();
+  let name_display = string[0].toUpperCase() + string.slice(1);
+
   const pass_user = password.value.trim();
   const age_user = 1;
   const time_start = "1";
