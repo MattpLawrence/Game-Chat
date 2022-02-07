@@ -292,10 +292,7 @@ a {
     padding: 0 0.2rem;
     display: flex;
   }
-  .chat-container .chat-header h1 {
-    font-size: 0.1rem;
-    color: var(--darkGray);
-  }
+
   .mb-5 {
     margin-bottom: 1em !important;
   }
