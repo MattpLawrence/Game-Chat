@@ -19,17 +19,6 @@ router.post("/", async (req, res) => {
     } else {
       console.log(userProfileData);
 
-      router.get("/loginPage", async (req, res) => {
-        try {
-          res.render("loginPage", {
-            loginPage: "yes",
-            userName: userProfileData.name_user,
-          });
-        } catch (err) {
-          res.status(500).json(err);
-        }
-      });
-
       res.status(200).json(`${userProfileData.name_display} has logged in.`);
     }
   } catch (err) {

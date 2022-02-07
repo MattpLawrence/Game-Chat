@@ -3,9 +3,17 @@ const fldPassword = document.getElementById("fldPassword");
 const loginForm = document.getElementById("loginForm");
 const btnLogin = document.getElementById("btnLogin");
 
+// function cap() {
+//   string = fldUserName.value;
+//   finalString = string[0].toUpperCase() + string.slice(1);
+//   console.log(finalString);
+// }
+
 // make api call to see if username and password are in database
 let checkCredentials = async () => {
-  const name_user = fldUserName.value.trim();
+  // capitalize first letter
+  string = fldUserName.value.trim();
+  let name_user = string[0].toUpperCase() + string.slice(1);
   const pass_user = fldPassword.value.trim();
 
   if (name_user && pass_user) {
@@ -65,4 +73,4 @@ let checkInputs = function () {
 };
 
 //listen for submit click
-btnLogin.addEventListener("click", checkInputs);
+btnLogin.addEventListener("click", checkCredentials);
