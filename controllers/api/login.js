@@ -18,12 +18,24 @@ router.post("/", async (req, res) => {
         .json({ message: "Incorrect email or password, please try again" });
     } else {
       console.log(userProfileData);
+      req.session.user_id = userProfileData.isSoftDeleted;
+      req.session.logged_in = true;
 
       res.status(200).json(`${userProfileData.name_display} has logged in.`);
     }
   } catch (err) {
     console.log(err);
     res.status(400).json(err);
+  }
+});
+
+router.post("/logout", (req, res) => {
+  if (req.session.logged_in) {
+    req.session.destroy(() => {
+      res.status(204).end();
+    });
+  } else {
+    res.status(404).end();
   }
 });
 
