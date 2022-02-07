@@ -9,7 +9,12 @@ router.post("/signupProfile", async (req, res) => {
   try {
     // console.log(req.params);
     const userProfileData = await UserProfile.create(req.body);
-    res.status(200).json(userProfileData);
+    req.session.save(() => {
+      req.session.user_id = userProfileData.id;
+      req.session.logged_in = true;
+      console.log(req.session.logged_in);
+      res.status(200).json(`${userProfileData.name_display} has logged in.`);
+    });
   } catch (err) {
     console.log(err);
     res.status(400).json(err);

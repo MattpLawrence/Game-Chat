@@ -26,25 +26,6 @@ const io = socketio(server);
 
 const PORT = process.env.PORT || 3001;
 
-app.use(
-  bodyParser.urlencoded({
-    extended: true,
-  })
-);
-app.use(bodyParser.json());
-
-// app.use(.json());
-
-// app.use(express.urlencoded({ extended: true }));
-// set root of static assets tot he 'public' folder
-app.use(express.static(path.join(__dirname, "public")));
-
-// set handlebars as default template engine
-app.engine("handlebars", hbs.engine);
-app.set("view engine", "handlebars");
-
-app.use(routes);
-
 // **************************************Session*********************************
 
 const sess = {
@@ -58,6 +39,25 @@ const sess = {
 };
 
 app.use(session(sess));
+
+app.use(
+  bodyParser.urlencoded({
+    extended: true,
+  })
+);
+app.use(bodyParser.json());
+
+// app.use(.json());
+
+// app.use(express.urlencoded({ extended: true }));
+// set root of static assets to the 'public' folder
+app.use(express.static(path.join(__dirname, "public")));
+
+// set handlebars as default template engine
+app.engine("handlebars", hbs.engine);
+app.set("view engine", "handlebars");
+
+app.use(routes);
 
 // ************************************Socket.io**************************************
 const botName = "Gamer Gabble Bot";
@@ -116,13 +116,9 @@ io.on("connection", (socket) => {
 
 // ************************************Server listen**********************************
 
-server.listen(PORT, () => console.log(`server running on port ${PORT}`));
-
-//keep clear for now....
-
 // make sure sequelize is connected before starting the server.
-// sequelize.sync({ force: false }).then(() => {
-//   app.listen(PORT, () => {
-//     console.log(` \nServer listening on port: ${PORT}`);
-//   });
-// });
+sequelize.sync({ force: false }).then(() => {
+  server.listen(PORT, () => {
+    console.log(` \nServer listening on port: ${PORT}`);
+  });
+});
