@@ -3,32 +3,62 @@ const fldPassword = document.getElementById("fldPassword");
 const loginForm = document.getElementById("loginForm");
 const btnLogin = document.getElementById("btnLogin");
 
-let checkInputs = function checkInputs() {
+let checkCredentials = async () => {
+  const name_user = fldUserName.value.trim();
+  const pass_user = fldPassword.value.trim();
+
+  if (name_user && pass_user) {
+    const response = await fetch(`/api/login`, {
+      method: "POST",
+      body: JSON.stringify({
+        name_user,
+        pass_user,
+      }),
+      headers: {
+        "content-type": "application/json",
+      },
+    });
+
+    if (response.ok) {
+      console.log("success");
+      document.location.replace(`/chat?username=${name_user}`);
+    } else {
+      console.log(err);
+      alert("Failed to login");
+    }
+  }
+};
+
+let checkInputs = function () {
   let alert = document.createElement("h3");
   alert.classList.add("alert");
 
   if (!(fldUserName.value.length >= 6)) {
-    if (loginForm.children.length < 6) {
+    if (loginForm.children.length <= 6) {
       console.log(loginForm.children.length);
       alert.innerHTML = `*Please enter a valid username.`;
       loginForm.append(alert);
+      console.log(loginForm.children.length);
     } else {
       console.log(loginForm.children.length);
-      loginForm.children[5].remove();
+      loginForm.children[6].remove();
       alert.innerHTML = `*Please enter a valid username.`;
       loginForm.append(alert);
     }
-  } else if (!(fldPassword.value.length >= 6)) {
-    if (loginForm.children.length < 6) {
+  } else if (!(fldPassword.value.length >= 4)) {
+    if (loginForm.children.length <= 6) {
       console.log(loginForm.children.length);
       alert.innerHTML = `*Please enter a valid password.`;
       loginForm.append(alert);
     } else {
       console.log("else");
-      loginForm.children[5].remove();
+      loginForm.children[6].remove();
       alert.innerHTML = `*Please enter a valid password.`;
       loginForm.append(alert);
     }
+  } else {
+    console.log("correct login");
+    checkCredentials();
   }
 };
 

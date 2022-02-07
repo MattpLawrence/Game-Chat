@@ -40,12 +40,12 @@ let postUser = async () => {
       console.log("success");
       document.location.replace(`/chat?username=${name_user}`);
     } else {
-      alert("Failed to create project");
+      alert("Failed to create user");
     }
   }
 };
 
-let checkInputs = function checkInputs() {
+let checkInputs = () => {
   let alert = document.createElement("h3");
   alert.classList.add("alert");
 
