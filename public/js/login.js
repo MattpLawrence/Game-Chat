@@ -32,8 +32,7 @@ let checkCredentials = async () => {
       console.log("success");
       document.location.replace(`/chat?username=${name_user}`);
     } else {
-      console.log(err);
-      alert("Failed to login");
+      alert("Invalid Username and Password.");
     }
   }
 };
