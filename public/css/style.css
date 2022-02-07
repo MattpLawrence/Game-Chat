@@ -289,9 +289,12 @@ a {
     font-size: 0.1rem;
     color: var(--darkGray);
   }
-  /* .chat-container .chat-header a {
-    margin-left: 70%;
-  } */
+  .mb-5 {
+    margin-bottom: 1em !important;
+  }
+  .mb-4 {
+    margin-bottom: 0.5em !important;
+  }
 }
 
 @media (max-width: 700px) {
