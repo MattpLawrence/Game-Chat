@@ -1,7 +1,6 @@
 const router = require("express").Router();
 const { withAuth, hasAuth } = require("../utils/auth");
 const { GamesList, UserGames, UserProfile } = require("../models");
-// const withAuth = require("../utils/auth");
 const path = require("path");
 
 //display initial homepage
@@ -23,9 +22,9 @@ router.get("/addGames:id", async (req, res) => {
 });
 
 //display initial chat
-router.get("/chat", async (req, res) => {
+router.get("/chat", withAuth, async (req, res) => {
   try {
-    res.render("chat", { chat_on: "yes" });
+    res.render("chat", { chat_on: "yes", logged_in: true });
   } catch (err) {
     res.status(500).json(err);
   }

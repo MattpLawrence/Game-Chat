@@ -20,7 +20,6 @@ router.post("/", async (req, res) => {
     } else {
       console.log(userProfileData);
       // set up session on login success
-      // console.log(req.session);
       req.session.save(() => {
         req.session.user_id = userProfileData.id;
         req.session.logged_in = true;

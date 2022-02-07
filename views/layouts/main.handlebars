@@ -46,10 +46,16 @@
 
         <ul class="navbar-nav mr-auto">
         </ul>
-
+        {{#if logged_in}}
           <a href="/loginPage" class="text-white-50 fw-bold">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log In</button>
           </a>
+        {{else}}
+          <a href="/" class="text-white-50 fw-bold">
+          <button class="btn btn-outline-success my-2 my-sm-0" id="logOut" type="submit">Log Out</button>
+          </a>
+
+        {{/if}}
 
     </nav>
   </header>
