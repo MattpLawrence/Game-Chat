@@ -35,7 +35,7 @@ let checkCredentials = async () => {
         loginForm.append(alert);
       } else {
         console.log("else");
-        loginForm.children[5].remove();
+        loginForm.children[6].remove();
         alert.innerHTML = `*Invalid username or password.`;
         loginForm.append(alert);
       }
