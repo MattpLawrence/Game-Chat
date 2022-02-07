@@ -38,7 +38,7 @@ let postUser = async () => {
 
     if (response.ok) {
       console.log("success");
-      document.location.replace("/chat");
+      document.location.replace(`/chat?username=${name_user}`);
     } else {
       alert("Failed to create project");
     }

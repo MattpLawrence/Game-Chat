@@ -15,7 +15,7 @@ socket.emit("joinRoom", { username, room });
 
 // get room and users
 socket.on("roomUsers", ({ room, users }) => {
-  outputRoomName(room);
+  // outputRoomName(room);
   outputUsers(users);
 });
 
