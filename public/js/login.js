@@ -18,7 +18,7 @@ let checkInputs = function checkInputs() {
       alert.innerHTML = `*Please enter a username with at least 6 characters.`;
       loginForm.append(alert);
     }
-  } else if (!(fldUserName.value.length >= 6)) {
+  } else if (!(fldPassword.value.length >= 6)) {
     if (loginForm.children.length < 6) {
       console.log(loginForm.children.length);
       alert.innerHTML = `*Please enter a username with at least 6 characters.`;
@@ -32,4 +32,4 @@ let checkInputs = function checkInputs() {
   }
 };
 
-btnLogin.addEventListener("click", checkInputs);
+btnLogin.addEventListener("click", checkInputs());
