@@ -10,26 +10,26 @@ let checkInputs = function checkInputs() {
   if (!(fldUserName.value.length >= 6)) {
     if (loginForm.children.length < 6) {
       console.log(loginForm.children.length);
-      alert.innerHTML = `*Please enter a username with at least 6 characters.`;
+      alert.innerHTML = `*Please enter a valid username.`;
       loginForm.append(alert);
     } else {
-      console.log("else");
+      console.log(loginForm.children.length);
       loginForm.children[5].remove();
-      alert.innerHTML = `*Please enter a username with at least 6 characters.`;
+      alert.innerHTML = `*Please enter a valid username.`;
       loginForm.append(alert);
     }
   } else if (!(fldPassword.value.length >= 6)) {
     if (loginForm.children.length < 6) {
       console.log(loginForm.children.length);
-      alert.innerHTML = `*Please enter a username with at least 6 characters.`;
+      alert.innerHTML = `*Please enter a valid password.`;
       loginForm.append(alert);
     } else {
       console.log("else");
       loginForm.children[5].remove();
-      alert.innerHTML = `*Please enter a username with at least 6 characters.`;
+      alert.innerHTML = `*Please enter a valid password.`;
       loginForm.append(alert);
     }
   }
 };
 
-btnLogin.addEventListener("click", checkInputs());
+btnLogin.addEventListener("click", checkInputs);

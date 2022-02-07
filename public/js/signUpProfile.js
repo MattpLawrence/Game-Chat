@@ -95,4 +95,4 @@ let checkInputs = function checkInputs() {
   }
 };
 
-btnRegister.addEventListener("click", checkInputs());
+btnRegister.addEventListener("click", checkInputs);
