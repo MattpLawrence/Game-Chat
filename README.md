@@ -40,11 +40,11 @@ The motivation behind this project was to make a complete chat application where
 
 ### -Problems Solved:
 
-Using Node.js and MySQL I was able to setup a database that would allow the addition of users and their preferred game info. I used a table diagram to help map out the orginization of table data
+Using Node.js and MySQL I was able to setup a database that would allow the addition of users and their preferred game info. I used a table diagram to help map out the organization of table data. Using Socket.io i was able to push chat information to all users in the same chat, this was something we wanted to do without having to refresh the page. In order to authenticate login sessions I use Express-sessions to create and update sessions when a user logs in or out.
 
 ### -What was Learned:
 
-I learned how to join different tables of information using primary and foreign keys.
+I learned how to use socket.io to set up web
 
 ## Table of Contents:
 
