@@ -23,7 +23,7 @@ router.post("/", async (req, res) => {
         req.session.user_id = userProfileData.id;
         req.session.logged_in = true;
         console.log(req.session.logged_in);
-        res.status(200).json(`${userProfileData.name_display} has logged in.`);
+        res.status(200).json({ message: userProfileData.name_display });
       });
     }
   } catch (err) {
