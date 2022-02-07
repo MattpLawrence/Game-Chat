@@ -122,7 +122,7 @@ io.on("connection", (socket) => {
 
 // make sure sequelize is connected before starting the server.
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => {
+  server.listen(PORT, () => {
     console.log(` \nServer listening on port: ${PORT}`);
   });
 });
