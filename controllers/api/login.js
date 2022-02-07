@@ -1,4 +1,3 @@
-// to come
 const router = require("express").Router();
 const { UserProfile } = require("../../models");
 
@@ -19,6 +18,18 @@ router.post("/", async (req, res) => {
         .json({ message: "Incorrect email or password, please try again" });
     } else {
       console.log(userProfileData);
+
+      router.get("/loginPage", async (req, res) => {
+        try {
+          res.render("loginPage", {
+            loginPage: "yes",
+            userName: userProfileData.name_user,
+          });
+        } catch (err) {
+          res.status(500).json(err);
+        }
+      });
+
       res.status(200).json(`${userProfileData.name_display} has logged in.`);
     }
   } catch (err) {

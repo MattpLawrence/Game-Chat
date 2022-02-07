@@ -3,6 +3,7 @@ const fldPassword = document.getElementById("fldPassword");
 const loginForm = document.getElementById("loginForm");
 const btnLogin = document.getElementById("btnLogin");
 
+// make api call to see if username and password are in database
 let checkCredentials = async () => {
   const name_user = fldUserName.value.trim();
   const pass_user = fldPassword.value.trim();
@@ -29,6 +30,7 @@ let checkCredentials = async () => {
   }
 };
 
+// check to see that inputs are filled out correctly and notify if not
 let checkInputs = function () {
   let alert = document.createElement("h3");
   alert.classList.add("alert");
@@ -62,4 +64,5 @@ let checkInputs = function () {
   }
 };
 
+//listen for submit click
 btnLogin.addEventListener("click", checkInputs);
