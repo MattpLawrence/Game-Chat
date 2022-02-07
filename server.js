@@ -5,6 +5,7 @@ const hbs = handlebars.create({});
 const http = require("http");
 const socketio = require("socket.io");
 const session = require("express-session");
+const bodyParser = require("body-parser");
 
 //require in models folder in order to generate the tables using sequelize
 const models = require("./models");
@@ -25,8 +26,16 @@ const io = socketio(server);
 
 const PORT = process.env.PORT || 3001;
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(
+  bodyParser.urlencoded({
+    extended: true,
+  })
+);
+app.use(bodyParser.json());
+
+// app.use(.json());
+
+// app.use(express.urlencoded({ extended: true }));
 // set root of static assets tot he 'public' folder
 app.use(express.static(path.join(__dirname, "public")));
 
@@ -111,7 +120,7 @@ server.listen(PORT, () => console.log(`server running on port ${PORT}`));
 
 //keep clear for now....
 
-//make sure sequelize is connected before starting the server.
+// make sure sequelize is connected before starting the server.
 // sequelize.sync({ force: false }).then(() => {
 //   app.listen(PORT, () => {
 //     console.log(` \nServer listening on port: ${PORT}`);

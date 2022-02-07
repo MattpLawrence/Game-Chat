@@ -4,10 +4,9 @@ const password = document.getElementById("password");
 const confirmPassword = document.getElementById("confirmPassword");
 const btnRegister = document.getElementById("btnRegister");
 const frmRegister = document.getElementById("frmRegister");
+const bodyParser = require("body-parser");
 
 console.log("yup");
-
-btnRegister.addEventListener("click", checkInputs);
 
 let postUser = async () => {
   const name_user = nameUser.value.trim();
@@ -17,16 +16,19 @@ let postUser = async () => {
   const time_start = "1";
   const end = "2";
 
-  if (name_user && name_display && pass_user) {
+  if (name_user && name_display && pass_user && age_user && time_start && end) {
     const response = await fetch(`/api/signup/signupProfile`, {
       method: "POST",
       body: JSON.stringify({
         name_user,
         pass_user,
         name_display,
+        age_user,
+        time_start,
+        end,
       }),
       headers: {
-        "content-type": "application / json",
+        "content-type": "application/json",
       },
     });
 
@@ -39,7 +41,7 @@ let postUser = async () => {
   }
 };
 
-function checkInputs() {
+let checkInputs = function checkInputs() {
   let alert = document.createElement("h3");
   alert.classList.add("alert");
 
@@ -88,4 +90,6 @@ function checkInputs() {
     console.log("complete");
     postUser();
   }
-}
+};
+
+btnRegister.addEventListener("click", checkInputs);
