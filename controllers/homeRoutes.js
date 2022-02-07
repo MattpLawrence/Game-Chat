@@ -1,8 +1,8 @@
 const router = require("express").Router();
 const { withAuth, hasAuth } = require("../utils/auth");
 const { GamesList, UserGames, UserProfile } = require("../models");
-// const withAuth = require("../utils/auth");
 const path = require("path");
+const { Session } = require("express-session");
 
 //display initial homepage
 router.get("/", async (req, res) => {
@@ -23,9 +23,19 @@ router.get("/addGames:id", async (req, res) => {
 });
 
 //display initial chat
-router.get("/chat", async (req, res) => {
+router.get("/chat", withAuth, async (req, res) => {
   try {
-    res.render("chat", { chat_on: "yes" });
+    const user_id = req.session.user_id;
+    console.log(user_id);
+    const userData = await UserProfile.findOne({
+      where: { id: user_id },
+    });
+    console.log("userData: " + userData);
+    //serialize
+    // const users = userData.map((user) => user.get({ plain: true }));
+    // console.log("userData: " + users);
+
+    res.render("chat", { userData, chat_on: "yes", logged_in: true });
   } catch (err) {
     res.status(500).json(err);
   }
