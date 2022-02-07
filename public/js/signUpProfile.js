@@ -5,26 +5,18 @@ const confirmPassword = document.getElementById("confirmPassword");
 const btnRegister = document.getElementById("btnRegister");
 const frmRegister = document.getElementById("frmRegister");
 
-console.log("yup");
-
 let postUser = async () => {
   const name_user = nameUser.value.trim();
   const name_display = nameDisplay.value.trim();
-  const pass_user = `"${password.value.trim()}"`;
-  const age_user = 1;
-  const time_start = "1";
-  const end = "2";
+  const pass_user = password.value.trim();
 
-  if (name_user && name_display && pass_user && age_user && time_start && end) {
+  if (name_user && name_display && pass_user) {
     const response = await fetch(`/api/signup/signupProfile`, {
       method: "POST",
       body: JSON.stringify({
         name_user,
         pass_user,
         name_display,
-        age_user,
-        time_start,
-        end,
       }),
       headers: {
         "content-type": "application/json",

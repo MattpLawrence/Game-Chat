@@ -121,8 +121,8 @@ server.listen(PORT, () => console.log(`server running on port ${PORT}`));
 //keep clear for now....
 
 // make sure sequelize is connected before starting the server.
-// sequelize.sync({ force: false }).then(() => {
-//   app.listen(PORT, () => {
-//     console.log(` \nServer listening on port: ${PORT}`);
-//   });
-// });
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => {
+    console.log(` \nServer listening on port: ${PORT}`);
+  });
+});

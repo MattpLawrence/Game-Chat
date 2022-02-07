@@ -5,12 +5,13 @@ const { UserProfile } = require("../../models");
 //take info from body, save to dbGameChat
 
 router.post("/signupProfile", async (req, res) => {
-  console.log(req.params);
+  console.log(req.body);
   try {
-    console.log(req.params);
-    const userProfileData = await UserProfile.create(...req.body);
+    // console.log(req.params);
+    const userProfileData = await UserProfile.create(req.body);
     res.status(200).json(userProfileData);
   } catch (err) {
+    console.log(err);
     res.status(400).json(err);
   }
 });
