@@ -8,7 +8,7 @@ router.post("/", async (req, res) => {
     });
     let password = userProfileData.pass_user;
 
-    console.log(password);
+    console.log(userProfileData);
     if (!userProfileData) {
       res
         .status(200)
@@ -18,7 +18,6 @@ router.post("/", async (req, res) => {
         .status(200)
         .json({ message: "Incorrect email or password, please try again" });
     } else {
-      console.log(userProfileData);
       // set up session on login success
       req.session.save(() => {
         req.session.user_id = userProfileData.id;

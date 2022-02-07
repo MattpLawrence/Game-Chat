@@ -25,18 +25,17 @@ router.get("/addGames:id", async (req, res) => {
 //display initial chat
 router.get("/chat", withAuth, async (req, res) => {
   try {
-    console.log(req.session.user_id);
     const user_id = req.session.user_id;
-    console.log("profileData" + userProfileData);
+    console.log(user_id);
     const userData = await UserProfile.findOne({
       where: { id: user_id },
     });
     console.log("userData: " + userData);
     //serialize
-    const users = userData.map((user) => user.get({ plain: true }));
-    console.log("userData: " + users);
+    // const users = userData.map((user) => user.get({ plain: true }));
+    // console.log("userData: " + users);
 
-    res.render("chat", { chat_on: "yes", logged_in: true });
+    res.render("chat", { userData, chat_on: "yes", logged_in: true });
   } catch (err) {
     res.status(500).json(err);
   }
