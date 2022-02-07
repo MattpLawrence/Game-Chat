@@ -22,23 +22,32 @@ let checkCredentials = async () => {
       headers: {
         "content-type": "application/json",
       },
-    });
-
-    if (response.ok) {
-      console.log("success");
-      document.location.replace(`/chat?username=${name_user}`);
-    } else {
-      //if duplicate entry alert the user to try different names
-      if (loginForm.children.length <= 6) {
-        console.log(loginForm.children.length);
-        alert.innerHTML = `*Invalid username or password.`;
-        loginForm.append(alert);
-      } else {
-        loginForm.children[6].remove();
-        alert.innerHTML = `*Invalid username or password.`;
-        loginForm.append(alert);
-      }
-    }
+    })
+      .then(function (response) {
+        if (!response.ok) {
+          if (loginForm.children.length <= 6) {
+            alert.innerHTML = `*Invalid username or password.`;
+            loginForm.append(alert);
+          } else {
+            loginForm.children[6].remove();
+            alert.innerHTML = `*Invalid username or password.`;
+            loginForm.append(alert);
+          }
+        }
+        console.log(response);
+        return response.json();
+      })
+      .then(function (data) {
+        // check to see if the response comes back and send to url before rerouting page
+        if (data.message.length > 0) {
+          console.log(data.message);
+          console.log("success");
+          document.location.replace(`/chat?username=${data.message}`);
+        }
+      })
+      .catch(function (error) {
+        console.error(error);
+      });
   }
 };
 
