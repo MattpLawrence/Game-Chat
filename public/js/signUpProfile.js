@@ -6,7 +6,8 @@ const btnRegister = document.getElementById("btnRegister");
 const frmRegister = document.getElementById("frmRegister");
 
 let postUser = async () => {
-  const name_user = nameUser.value.trim();
+  string = nameUser.value.trim();
+  let name_user = string[0].toUpperCase() + string.slice(1);
   const name_display = nameDisplay.value.trim();
   const pass_user = password.value.trim();
   const age_user = 1;
@@ -38,7 +39,7 @@ let postUser = async () => {
 
     if (response.ok) {
       console.log("success");
-      document.location.replace(`/chat?username=${name_user}`);
+      document.location.replace(`/chat?username=${name_display}`);
     } else {
       alert("Failed to create user");
     }
