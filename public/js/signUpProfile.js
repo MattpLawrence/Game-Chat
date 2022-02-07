@@ -5,6 +5,9 @@ const confirmPassword = document.getElementById("confirmPassword");
 const btnRegister = document.getElementById("btnRegister");
 const frmRegister = document.getElementById("frmRegister");
 
+let alert = document.createElement("h3");
+alert.classList.add("alert");
+
 let postUser = async () => {
   string = nameUser.value.trim();
   let name_user = string[0].toUpperCase() + string.slice(1);
@@ -41,14 +44,24 @@ let postUser = async () => {
       console.log("success");
       document.location.replace(`/chat?username=${name_display}`);
     } else {
-      alert("Failed to create user");
+      //if duplicate entry alert the user to try different names
+      if (frmRegister.children.length < 6) {
+        console.log(frmRegister.children.length);
+        alert.innerHTML = `*Username and Display name have already been taken.`;
+        frmRegister.append(alert);
+      } else {
+        console.log("else");
+        frmRegister.children[5].remove();
+        alert.innerHTML = `*Username and Display name have already been taken.`;
+        frmRegister.append(alert);
+      }
     }
   }
 };
 
 let checkInputs = () => {
-  let alert = document.createElement("h3");
-  alert.classList.add("alert");
+  // let alert = document.createElement("h3");
+  // alert.classList.add("alert");
 
   if (!(nameUser.value.length >= 6)) {
     if (frmRegister.children.length < 6) {
