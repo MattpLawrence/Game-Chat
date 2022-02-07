@@ -32,7 +32,20 @@ let checkCredentials = async () => {
       console.log("success");
       document.location.replace(`/chat?username=${name_user}`);
     } else {
+<<<<<<< Updated upstream
       alert("Invalid Username and Password.");
+=======
+      //if duplicate entry alert the user to try different names
+      if (loginForm.children.length <= 6) {
+        console.log(loginForm.children.length);
+        alert.innerHTML = `*Invalid username or password.`;
+        loginForm.append(alert);
+      } else {
+        loginForm.children[6].remove();
+        alert.innerHTML = `*Invalid username or password.`;
+        loginForm.append(alert);
+      }
+>>>>>>> Stashed changes
     }
   }
 };
@@ -72,4 +85,4 @@ let checkInputs = function () {
 };
 
 //listen for submit click
-btnLogin.addEventListener("click", checkCredentials);
+btnLogin.addEventListener("click", checkInputs);
