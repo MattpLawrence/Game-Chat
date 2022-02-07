@@ -41,7 +41,7 @@ router.get("/signUpProfile", async (req, res) => {
 //display initial login page
 router.get("/loginPage", async (req, res) => {
   try {
-    res.render("loginPage", {});
+    res.render("loginPage", { loginPage: "yes" });
   } catch (err) {
     res.status(500).json(err);
   }

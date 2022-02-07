@@ -6,17 +6,31 @@ const btnRegister = document.getElementById("btnRegister");
 const frmRegister = document.getElementById("frmRegister");
 
 let postUser = async () => {
-  const name_user = nameUser.value.trim();
+  string = nameUser.value.trim();
+  let name_user = string[0].toUpperCase() + string.slice(1);
   const name_display = nameDisplay.value.trim();
   const pass_user = password.value.trim();
+  const age_user = 1;
+  const time_start = "1";
+  const time_end = "2";
 
-  if (name_user && name_display && pass_user) {
+  if (
+    name_user &&
+    name_display &&
+    pass_user &&
+    age_user &&
+    time_start &&
+    time_end
+  ) {
     const response = await fetch(`/api/signup/signupProfile`, {
       method: "POST",
       body: JSON.stringify({
         name_user,
         pass_user,
         name_display,
+        age_user,
+        time_start,
+        time_end,
       }),
       headers: {
         "content-type": "application/json",
@@ -25,14 +39,14 @@ let postUser = async () => {
 
     if (response.ok) {
       console.log("success");
-      // document.location.replace("/profile");
+      document.location.replace(`/chat?username=${name_display}`);
     } else {
-      alert("Failed to create project");
+      alert("Failed to create user");
     }
   }
 };
 
-let checkInputs = function checkInputs() {
+let checkInputs = () => {
   let alert = document.createElement("h3");
   alert.classList.add("alert");
 
@@ -78,7 +92,6 @@ let checkInputs = function checkInputs() {
       frmRegister.append(alert);
     }
   } else {
-    console.log("complete");
     postUser();
   }
 };

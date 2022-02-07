@@ -275,12 +275,25 @@ a {
   .fontAwesome {
     display: none;
   }
+  .chat-container .chat-header h1 {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 520px) {
   .nav-link {
     padding: 0 0.2rem;
     display: flex;
+  }
+  .chat-container .chat-header h1 {
+    font-size: 0.1rem;
+    color: var(--darkGray);
+  }
+  .mb-5 {
+    margin-bottom: 1em !important;
+  }
+  .mb-4 {
+    margin-bottom: 0.5em !important;
   }
 }
 
@@ -291,6 +304,23 @@ a {
 
   .chat-sidebar {
     display: none;
+  }
+  .chat-messages {
+    min-height: 70vh;
+  }
+}
+@media (max-width: 800px) {
+  #mainWindow {
+    padding: 0;
+  }
+  #chatShadow {
+    padding: 0;
+  }
+  .chat-container {
+    margin: 20px auto;
+  }
+  .chat-header h1 {
+    font-size: 2rem;
   }
 }
 
