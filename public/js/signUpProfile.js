@@ -25,7 +25,7 @@ let postUser = async () => {
     time_start &&
     time_end
   ) {
-    const response = await fetch(`/api/signup/signUpProfile`, {
+    const response = await fetch(`/api/signup/signupProfile`, {
       method: "POST",
       body: JSON.stringify({
         name_user,
