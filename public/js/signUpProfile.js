@@ -4,14 +4,13 @@ const password = document.getElementById("password");
 const confirmPassword = document.getElementById("confirmPassword");
 const btnRegister = document.getElementById("btnRegister");
 const frmRegister = document.getElementById("frmRegister");
-const bodyParser = require("body-parser");
 
 console.log("yup");
 
 let postUser = async () => {
   const name_user = nameUser.value.trim();
   const name_display = nameDisplay.value.trim();
-  const pass_user = password.value.trim();
+  const pass_user = `"${password.value.trim()}"`;
   const age_user = 1;
   const time_start = "1";
   const end = "2";
