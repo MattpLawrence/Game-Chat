@@ -29,11 +29,9 @@ router.get("/chat", withAuth, async (req, res) => {
     console.log(user_id);
     const userData = await UserProfile.findOne({
       where: { id: user_id },
+      raw: true,
     });
     console.log("userData: " + userData);
-    //serialize
-    // const users = userData.map((user) => user.get({ plain: true }));
-    // console.log("userData: " + users);
 
     res.render("chat", { userData, chat_on: "yes", logged_in: true });
   } catch (err) {
