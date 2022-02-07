@@ -18,6 +18,13 @@ Using Node.js and MySQL I was able to setup a database that would allow the addi
 
 I learned how to use socket.io to set up web sockets to transfer messages without having to update the webpage. Additionally how to set up routes to and from the frontend and database to relate information and display it appropriately.
 
+### -Technologies Used:
+
+1. Heroku and JawsDB to host the live application.
+2. Mysql2 and Sequelize to maintain the database.
+3. Express.js and Socket.io for middleware.
+4. CSS, Bootstrap, and Handlebars for the front end user interface.
+
 ## Table of Contents:
 
 1. [Installation](#install)
