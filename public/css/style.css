@@ -71,10 +71,6 @@
   font-size: 1.2rem;
 }
 
-#btnSignUp:hover {
-  background-color: var(--brightGreen);
-}
-
 /* *****************************************Chat Page********************** */
 
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
