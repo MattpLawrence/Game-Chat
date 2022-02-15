@@ -47,9 +47,6 @@ app.use(
 );
 app.use(bodyParser.json());
 
-// app.use(.json());
-
-// app.use(express.urlencoded({ extended: true }));
 // set root of static assets to the 'public' folder
 app.use(express.static(path.join(__dirname, "public")));
 
