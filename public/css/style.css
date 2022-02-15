@@ -66,11 +66,9 @@
 }
 
 #btnSignUp {
-  background-color: rgba(255, 255, 255, 0.3);
   height: 5rem;
   width: 10rem;
-  border-width: 4px;
-  font-weight: bolder;
+  font-size: 1.2rem;
 }
 
 #btnSignUp:hover {
@@ -279,9 +277,6 @@ a {
 }
 
 @media (max-width: 380px) {
-  .fontAwesome {
-    display: none;
-  }
   .chat-container .chat-header h1 {
     font-size: 1.5rem;
   }
@@ -290,7 +285,7 @@ a {
 @media (max-width: 520px) {
   .nav-link {
     padding: 0 0.2rem;
-    display: flex;
+    display: none;
   }
 
   .mb-5 {
