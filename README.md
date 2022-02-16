@@ -34,7 +34,7 @@ I learned how to use socket.io to set up web sockets to transfer messages withou
 
 ## Installation Instructions: <a name="install"></a>
 
-To install this repository go to [MattpLawrence/Employee-Tracker](https://github.com/MattpLawrence/Game-Chat). From there clone the repository to your local computer. Make sure to install [Node.js](https://nodejs.org/en/download/) in order to run the application.
+To install this repository go to [MattpLawrence/Game-Chat](https://github.com/MattpLawrence/Game-Chat). From there clone the repository to your local computer. Make sure to install [Node.js](https://nodejs.org/en/download/) in order to run the application.
 
 ## How to Use: <a name="usage"></a>
 
