@@ -2,6 +2,8 @@
 
 ![MIT-Tag](https://shields.io/badge/license-MIT-green)
 
+Use Deployed version here: [Heroku](https://gamer-gabble.herokuapp.com/)
+
 ## Description:
 
 A full stack chat app for video gamers. Built using Node.js, Express.js, MySQL2, Handlebars, Socket.io, an Express-Sessions for authentication.
